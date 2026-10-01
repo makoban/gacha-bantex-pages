@@ -585,23 +585,24 @@
         <div class="sim-grid">
           <form class="fields" id="sim-form" autocomplete="off">
             <label class="field" for="sim-price">1回の売価（税込）<span class="in"><select id="sim-price"><option value="100">100円</option><option value="200">200円</option><option value="300">300円</option><option value="400" selected>400円</option><option value="500">500円（別売りの部品が必要）</option></select></span></label>
-            <label class="field" for="qty">追加する個数<span class="in"><input id="qty" type="number" inputmode="numeric" min="1" step="1" value="80"><span>個</span></span></label>
-            <label class="field" for="goods">商品代（合計・税別）<span class="in"><input id="goods" type="number" inputmode="numeric" min="0" step="100" value="25200"><span>円</span></span></label>
+            <label class="field" for="qty">追加する個数<span class="in"><input id="qty" type="number" inputmode="numeric" min="1" step="1" value="400"><span>個</span></span></label>
+            <label class="field" for="unit">商品代（1個・税別）<span class="in"><input id="unit" type="number" inputmode="numeric" min="0" step="1" value="315"><span>円</span></span></label>
             <label class="field" for="ship">送料（税別）<span class="in"><input id="ship" type="number" inputmode="numeric" min="0" step="100" value="1000"><span>円</span></span></label>
             <div class="field">基本管理費（税別）<span class="fixed">10,000円</span></div>
-            <div class="field">例<div class="presets"><button type="button" data-p="400" data-q="80" data-g="25200" aria-pressed="true">標準商品80個・400円</button><button type="button" data-p="300" data-q="80" data-g="25200" aria-pressed="false">同じ商品を300円で</button></div></div>
+            <div class="field">例<div class="presets"><button type="button" data-p="400" data-q="400" aria-pressed="true">400個・400円</button><button type="button" data-p="400" data-q="80" aria-pressed="false">80個・400円</button><button type="button" data-p="300" data-q="400" aria-pressed="false">400個・300円</button></div></div>
           </form>
           <div class="result" aria-live="polite">
             <dl>
-              <div><dt>全部売れたときの売上（税込）</dt><dd id="r-sales-in">32,000円</dd></div>
-              <div><dt>売上（税抜）</dt><dd id="r-sales">29,091円</dd></div>
-              <div><dt>費用（商品代＋基本管理費＋送料）</dt><dd id="r-cost">36,200円</dd></div>
+              <div><dt>全部売れたときの売上（税込）</dt><dd id="r-sales-in">160,000円</dd></div>
+              <div><dt>売上（税抜）</dt><dd id="r-sales">145,455円</dd></div>
+              <div><dt>商品代（合計・税別）</dt><dd id="r-goods">126,000円</dd></div>
+              <div><dt>費用（商品代＋基本管理費＋送料）</dt><dd id="r-cost">137,000円</dd></div>
             </dl>
-            <p class="total"><span>差し引き</span><span class="v neg" id="r-total">−7,109円</span></p>
-            <p class="be" id="r-be">この条件では、すべて売れても赤字です。</p>
+            <p class="total"><span>差し引き</span><span class="v pos" id="r-total">+8,455円</span></p>
+            <p class="be" id="r-be">この条件では、すべて売れた場合に黒字です。ロスや家賃・人件費は含みません。</p>
           </div>
         </div>
-        <p class="warn">表示している例は、標準商品80個（商品代25,200円）を1個400円（税込）で、すべて売った場合です。詰まり・売れ残りなどのロス、設置場所の家賃・人件費は含みません。少量ずつの追加では、費用が売上を上回ることがあります。売価・商品・追加する数は担当者と相談して決めます。売上や利益を保証するものではありません。</p>
+        <p class="warn">最初に表示している例は、標準商品400個（商品代1個315円）を1個400円（税込）で、すべて売った場合です。詰まり・売れ残りなどのロス、設置場所の家賃・人件費は含みません。80個など少量ずつの追加では、費用が売上を上回ることがあります。一度に多く仕入れると1個あたりの管理費は下がりますが、売り切るまでの期間と在庫が増えます。売価・商品・追加する数は担当者と相談して決めます。売上や利益を保証するものではありません。</p>
       </div>
       <p class="note" style="margin-top: 12px">商品代・送料は例です。実際の金額は、商品と配送先によってお見積りします。</p>
     </div>
@@ -708,7 +709,8 @@
     function update() {
       var price = Number($('sim-price').value);
       var qty = Math.max(1, Math.floor(Number($('qty').value) || 1));
-      var goods = Math.max(0, Number($('goods').value) || 0);
+      var unit = Math.max(0, Number($('unit').value) || 0);
+      var goods = unit * qty;
       var ship = Math.max(0, Number($('ship').value) || 0);
       var salesIn = price * qty;
       var sales = salesIn / 1.1;
@@ -716,13 +718,13 @@
       var total = sales - cost;
       $('r-sales-in').textContent = yen(salesIn);
       $('r-sales').textContent = yen(sales);
+      $('r-goods').textContent = yen(goods);
       $('r-cost').textContent = yen(cost);
       var t = $('r-total');
       var r = Math.round(total);
       t.textContent = (r > 0 ? '+' : r < 0 ? '−' : '±') + Math.abs(r).toLocaleString('ja-JP') + '円';
       t.className = 'v ' + (r < 0 ? 'neg' : 'pos');
-      var perItem = goods / qty;
-      var margin = price / 1.1 - perItem;
+      var margin = price / 1.1 - unit;
       var msg;
       if (r >= 0) msg = 'この条件では、すべて売れた場合に黒字です。ロスや家賃・人件費は含みません。';
       else if (margin <= 0) msg = 'この条件では、すべて売れても赤字です。1個あたりの商品代が売価（税抜）以上です。';
@@ -736,7 +738,7 @@
     form.addEventListener('submit', function (e) { e.preventDefault(); });
     form.querySelectorAll('.presets button').forEach(function (b) {
       b.addEventListener('click', function () {
-        $('sim-price').value = b.dataset.p; $('qty').value = b.dataset.q; $('goods').value = b.dataset.g; $('ship').value = 1000;
+        $('sim-price').value = b.dataset.p; $('qty').value = b.dataset.q; $('unit').value = 315; $('ship').value = 1000;
         update();
         form.querySelectorAll('.presets button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
       });
