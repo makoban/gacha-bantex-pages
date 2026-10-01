@@ -3,283 +3,314 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>空きスペースをガチャで｜1ボックスから始めるガチャ導入サポート｜BANTEX</title>
-<meta name="description" content="小さなお店・施設の空きスペースに、ガチャを1ボックス（上下2台）から。ディスプレイのデザイン、商品選び、オリジナル制作、保守まで担当がサポート。LINEからすぐ相談できます。">
+<title>小さく始めるガチャ売場｜おまかせスタート全部込み15万円（税別）から｜BANTEX</title>
+<meta name="description" content="お店・施設の空きスペースを、ワクワクする売場に。筐体・アイテム・ディスプレイ、おまかせスタート全部込み15万円（税別）から。担当者が付くので安心。LINEで相談できます。">
 <link rel="canonical" href="https://gacha.bantex.jp/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BANTEX ガチャ導入サポート">
-<meta property="og:title" content="空きスペースを、ガチャで利用しませんか？｜BANTEX">
-<meta property="og:description" content="面倒なことは、担当が全部サポート。1ボックス（上下2台）から小さく始められます。">
+<meta property="og:title" content="小さく始めるガチャ売場。面倒なことは、担当者におまかせ。｜BANTEX">
+<meta property="og:description" content="筐体・アイテム・ディスプレイ、おまかせスタート全部込み15万円（税別）から。税込165,000円〜。">
 <meta property="og:url" content="https://gacha.bantex.jp/">
-<meta property="og:image" content="https://gacha.bantex.jp/img/hero-1536.jpg">
+<meta property="og:image" content="https://gacha.bantex.jp/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#fffaf0">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f7c84b' stroke='%231f3133' stroke-width='4'/%3E%3Cpath d='M4 32h56' stroke='%231f3133' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23fff' stroke='%231f3133' stroke-width='4'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#fff8ef">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e8336d'/%3E%3Cpath d='M4 32h56' stroke='%23fff' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23ffd95a' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Klee+One:wght@600&display=swap">
 <style>
-  /* チラシと同じ配色。丸いカプセルを、数字の札・見出しの印・ボタンの形に使う */
+  /* 新チラシと同じ配色：ピンク・クリーム・黄色、緑はBANTEXとLINEの行動ボタンだけ */
   :root {
-    --paper: #fffaf0;
+    --cream: #fff8ef;
     --card: #ffffff;
-    --ink: #1f3133;
-    --ink-soft: #3f5456;
-    --muted: #5d6e6f;
-    --line: #e4e6dd;
-    --yellow: #f7c84b;
-    --yellow-soft: #fff1bf;
-    --mint: #bde3d2;
-    --mint-soft: #eaf6f0;
-    --coral: #ee826f;
-    --coral-deep: #d9604b;
-    --coral-soft: #fde8e2;
+    --ink: #2b1b15;
+    --ink-soft: #5a463e;
+    --muted: #7a6760;
+    --line: #f1dcd6;
+    --pink: #e8336d;
+    --pink-deep: #c81e57;
+    --pink-soft: #fde6ee;
+    --pink-mid: #f8bfd0;
+    --yellow: #ffd95a;
+    --yellow-soft: #fff3c4;
+    --green: #12895b;
+    --green-deep: #0b6e47;
     --line-green: #06c755;
-    --line-green-deep: #05a947;
-    --good: #1f7d59;
+    --tile-mint: #e2f4e8;
+    --tile-sky: #e2effa;
+    --bad: #c81e57;
     --font-display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
     --font-body: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
-    --content: 1080px;
+    --font-hand: "Klee One", "Hiragino Maru Gothic ProN", sans-serif;
+    --content: 1100px;
     color-scheme: light;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.85; padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.85; padding-bottom: calc(78px + env(safe-area-inset-bottom, 0px)); }
   @media (min-width: 900px) { body { padding-bottom: 0; } }
   img { max-width: 100%; height: auto; display: block; }
   a { color: inherit; }
-  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--coral-deep); outline-offset: 3px; border-radius: 10px; }
+  a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--pink-deep); outline-offset: 3px; border-radius: 10px; }
   .wrap { max-width: var(--content); margin-inline: auto; padding-inline: 20px; }
   @media (max-width: 560px) { .wrap { padding-inline: 16px; } }
-  h1, h2, h3 { font-family: var(--font-display); line-height: 1.35; margin: 0; text-wrap: balance; }
-  h2 { font-size: clamp(1.55rem, 1.1rem + 2vw, 2.3rem); font-weight: 900; }
+  h1, h2, h3 { font-family: var(--font-display); line-height: 1.3; margin: 0; text-wrap: balance; }
+  h2 { font-size: clamp(1.6rem, 1.1rem + 2vw, 2.3rem); font-weight: 900; }
   h3 { font-size: 1.15rem; font-weight: 700; }
   p { margin: 0; }
   .nb { display: inline-block; }
-  .num { font-family: var(--font-display); font-weight: 900; font-variant-numeric: tabular-nums; }
-  section { padding-block: clamp(52px, 8vw, 92px); scroll-margin-top: 64px; }
-  .tint { background: var(--mint-soft); }
-  .sec-head { display: grid; gap: 10px; margin-bottom: 28px; max-width: 46rem; }
+  .pk { color: var(--pink-deep); }
+  section { padding-block: clamp(52px, 8vw, 88px); scroll-margin-top: 66px; }
+  .sec-pink { background: var(--pink-soft); }
+  .sec-head { display: grid; gap: 10px; margin-bottom: 28px; max-width: 48rem; }
   .sec-head p { color: var(--ink-soft); }
-  .kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.1em; color: var(--ink-soft); }
-  .kicker b { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--yellow); color: var(--ink); font-family: var(--font-display); font-size: 0.95rem; border: 2px solid var(--ink); letter-spacing: 0; }
+  .kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 800; color: var(--pink-deep); letter-spacing: 0.06em; }
+  .kicker b { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--pink); color: #fff; font-family: var(--font-display); font-size: 0.95rem; letter-spacing: 0; }
   .note { font-size: 0.8rem; color: var(--muted); }
   .note a { text-underline-offset: 3px; }
 
-  /* buttons */
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 10px 26px; border-radius: 999px; font-weight: 800; text-decoration: none; border: 2px solid var(--ink); background: var(--card); color: var(--ink); font-size: 1rem; transition: transform 0.15s ease; }
-  .btn:hover { transform: translateY(-2px); }
-  .btn-line { background: var(--line-green); border-color: var(--line-green-deep); color: #fff; font-size: 1.05rem; }
-  .btn-line:hover { background: var(--line-green-deep); }
-  .btn-line svg { width: 26px; height: 26px; flex: none; }
-  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+  /* LINE button */
+  .btn-line { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 10px 28px; border-radius: 999px; background: var(--green); color: #fff; font-weight: 900; font-family: var(--font-display); font-size: 1.08rem; text-decoration: none; box-shadow: 0 5px 0 var(--green-deep); transition: transform 0.15s ease; }
+  .btn-line:hover { transform: translateY(-2px); }
+  .btn-line .lg { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #fff; color: var(--line-green); font-size: 0.62rem; font-weight: 900; letter-spacing: 0; font-family: var(--font-body); }
+  .btn-line .arrow { font-size: 1.1em; }
+  .btn-line.white { background: #fff; color: var(--green-deep); box-shadow: 0 5px 0 rgba(0, 0, 0, 0.12); }
+  .btn-line.white .lg { background: var(--line-green); color: #fff; }
+  @media (prefers-reduced-motion: reduce) { .btn-line { transition: none; } .btn-line:hover { transform: none; } }
 
   /* header */
-  .site-head { position: sticky; top: 0; z-index: 20; background: rgba(255, 250, 240, 0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-  .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 60px; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 900; letter-spacing: 0.06em; }
-  .brand svg { width: 30px; height: 30px; flex: none; }
-  .brand small { font-weight: 700; letter-spacing: 0.02em; color: var(--ink-soft); font-size: 0.78rem; }
-  .head-nav { display: flex; gap: 4px 16px; font-size: 0.88rem; flex-wrap: wrap; }
-  .head-nav a { text-decoration: none; color: var(--ink-soft); }
-  .head-nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
-  .head-line { min-height: 42px; padding: 6px 18px; font-size: 0.92rem; }
-  @media (max-width: 899px) { .head-nav, .head-line { display: none; } }
+  .site-head { position: sticky; top: 0; z-index: 20; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+  .brand { display: inline-flex; align-items: baseline; gap: 10px; text-decoration: none; }
+  .brand .logo { font-family: var(--font-display); font-weight: 900; font-size: 1.7rem; color: var(--green); letter-spacing: 0.02em; line-height: 1; }
+  .brand small { font-weight: 800; font-size: 0.92rem; color: var(--ink); }
+  .head-nav { display: flex; gap: 6px 22px; font-weight: 700; font-size: 0.92rem; }
+  .head-nav a { text-decoration: none; }
+  .head-nav a:hover { color: var(--pink-deep); }
+  .head-line { min-height: 44px; padding: 6px 20px; font-size: 0.95rem; box-shadow: none; }
+  .head-line .lg { width: 26px; height: 26px; font-size: 0.55rem; }
+  @media (max-width: 899px) { .head-nav, .head-line { display: none; } .brand small { font-size: 0.82rem; } }
 
   /* hero */
-  .hero { padding-block: clamp(28px, 5vw, 64px) clamp(44px, 7vw, 80px); }
-  .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 52px); align-items: center; }
-  .hero-copy { display: grid; gap: 18px; min-width: 0; }
-  .eyebrow { justify-self: start; padding: 4px 16px; border-radius: 999px; background: var(--mint); font-weight: 700; font-size: 0.9rem; }
-  .hero h1 { font-size: clamp(1.9rem, 0.9rem + 2.6vw, 2.6rem); font-weight: 900; line-height: 1.25; }
-  .hero h1 .accent { color: var(--coral-deep); }
-  .ribbon { justify-self: start; background: var(--coral-deep); color: #fff; font-family: var(--font-display); font-weight: 900; font-size: clamp(1.1rem, 0.9rem + 1vw, 1.45rem); padding: 8px 22px; border-radius: 14px; box-shadow: 0 6px 0 rgba(31, 49, 51, 0.12); }
-  .hero-lead { color: var(--ink-soft); max-width: 34rem; }
-  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
-  .chips li { background: var(--card); border: 1.5px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-size: 0.88rem; font-weight: 700; }
-  .chips li b { color: var(--coral-deep); }
-  .photo { border-radius: 26px; overflow: hidden; border: 2px solid var(--ink); background: var(--card); box-shadow: 0 18px 44px rgba(31, 49, 51, 0.12); }
-  .photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
-  figure { margin: 0; }
-  figcaption { font-size: 0.75rem; color: var(--muted); margin-top: 8px; }
-  @media (max-width: 899px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); } }
+  .hero { position: relative; overflow: hidden; padding-block: clamp(28px, 5vw, 56px) clamp(36px, 6vw, 64px); background: radial-gradient(circle at 85% 20%, #ffd7e3 0, rgba(255, 215, 227, 0) 42%), radial-gradient(circle at 10% 90%, #fff0c7 0, rgba(255, 240, 199, 0) 40%), linear-gradient(180deg, #fff3f6 0%, var(--cream) 100%); }
+  .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(18px, 3vw, 40px); align-items: center; }
+  .hero-copy { display: grid; gap: 16px; min-width: 0; }
+  .pill { justify-self: start; background: var(--yellow); border-radius: 999px; padding: 6px 18px; font-weight: 800; font-size: 0.95rem; }
+  .hero h1 { font-size: clamp(2.3rem, 1.2rem + 4.4vw, 4.1rem); font-weight: 900; line-height: 1.15; letter-spacing: -0.01em; }
+  .hero .lead1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.25rem, 0.95rem + 1.4vw, 1.9rem); color: var(--pink-deep); line-height: 1.35; }
+  .hero .lead2 { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.1rem, 0.95rem + 0.8vw, 1.45rem); line-height: 1.45; }
+  .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; list-style: none; margin: 4px 0 0; padding: 0; }
+  .tiles li { border-radius: 16px; padding: 10px 8px 12px; display: grid; gap: 4px; justify-items: center; text-align: center; font-weight: 800; font-size: 0.86rem; line-height: 1.35; min-width: 0; }
+  .tiles li:nth-child(1) { background: var(--pink-soft); }
+  .tiles li:nth-child(2) { background: var(--tile-mint); }
+  .tiles li:nth-child(3) { background: var(--yellow-soft); }
+  .tiles li:nth-child(4) { background: var(--tile-sky); }
+  .tiles img { width: 64px; height: 64px; object-fit: contain; mix-blend-mode: multiply; }
+  .anshin { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.25rem, 1rem + 1.1vw, 1.75rem); line-height: 1.35; }
+  .anshin + p { color: var(--ink-soft); font-weight: 700; margin-top: -8px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .hero-visual { position: relative; min-width: 0; }
+  .hero-visual img.main { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 28px; }
+  .bubble-hand { position: absolute; top: 2%; left: -2%; background: #fff; border-radius: 22px; padding: 10px 18px; font-family: var(--font-hand); font-size: clamp(0.95rem, 0.8rem + 0.6vw, 1.2rem); line-height: 1.4; box-shadow: 0 6px 18px rgba(43, 27, 21, 0.1); transform: rotate(-4deg); }
+  .bubble-hand .heart { color: var(--pink); }
+  .bubble-round { position: absolute; top: 20%; right: -1%; width: clamp(96px, 9vw, 128px); aspect-ratio: 1; border-radius: 50%; background: var(--yellow); display: grid; place-items: center; text-align: center; font-family: var(--font-display); font-weight: 900; font-size: clamp(0.78rem, 0.66rem + 0.4vw, 0.95rem); line-height: 1.35; box-shadow: 0 6px 18px rgba(43, 27, 21, 0.12); transform: rotate(6deg); padding: 8px; }
+  .badges { position: absolute; left: 0; right: 0; bottom: 3%; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding-inline: 8px; }
+  .badge-y { background: var(--yellow); border-radius: 26px; padding: 6px 16px 8px; text-align: center; font-family: var(--font-display); font-weight: 900; line-height: 1.2; box-shadow: 0 6px 16px rgba(43, 27, 21, 0.14); }
+  .badge-y b { color: var(--pink-deep); font-size: 1.5rem; }
+  .badge-y small { display: block; font-family: var(--font-body); font-weight: 700; font-size: 0.68rem; color: var(--ink-soft); }
+  @media (max-width: 899px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); } .hero-visual { max-width: 460px; justify-self: center; width: 100%; } }
+  @media (max-width: 480px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+  /* price frame */
+  .price { padding-block: clamp(28px, 5vw, 48px); }
+  .frame { border: 3px solid var(--pink); border-radius: 26px; background: #fff; padding: clamp(16px, 2.5vw, 26px); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.95fr) minmax(0, 1fr); gap: 18px; align-items: stretch; }
+  .p-main { display: grid; gap: 6px; align-content: center; min-width: 0; }
+  .p-tag { justify-self: start; background: var(--pink); color: #fff; font-family: var(--font-display); font-weight: 900; font-size: clamp(0.95rem, 0.8rem + 0.6vw, 1.25rem); padding: 4px 16px; border-radius: 10px; }
+  .p-lead { font-family: var(--font-display); font-weight: 900; color: var(--pink-deep); font-size: clamp(1.25rem, 0.95rem + 1.2vw, 1.8rem); line-height: 1.3; }
+  .p-price { display: flex; align-items: flex-end; gap: 8px; color: var(--pink); font-family: var(--font-display); font-weight: 900; line-height: 1; flex-wrap: wrap; }
+  .p-price .big { font-size: clamp(3.6rem, 2.4rem + 5vw, 5.6rem); letter-spacing: -0.02em; }
+  .p-price .sm { font-size: clamp(1.05rem, 0.9rem + 0.6vw, 1.35rem); padding-bottom: 0.5em; line-height: 1.25; }
+  .p-tax { font-family: var(--font-display); font-weight: 900; font-size: 1.2rem; }
+  .p-pack { background: var(--yellow-soft); border-radius: 18px; padding: 16px 18px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+  .p-pack .ttl { justify-self: start; background: var(--pink); color: #fff; font-weight: 900; border-radius: 999px; padding: 2px 14px; font-size: 0.92rem; }
+  .p-pack ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .p-pack li { display: flex; gap: 8px; align-items: baseline; font-weight: 800; font-size: 0.98rem; }
+  .p-pack li::before { content: "✓"; display: inline-grid; place-items: center; flex: none; width: 20px; height: 20px; border-radius: 50%; background: var(--pink); color: #fff; font-size: 0.75rem; transform: translateY(2px); }
+  .p-space { border: 2px solid var(--green); border-radius: 18px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; min-width: 0; }
+  .p-space .ttl { background: var(--green); color: #fff; font-weight: 900; padding: 6px 14px; font-family: var(--font-display); font-size: 1.02rem; }
+  .p-space .body { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px; padding: 12px 14px; align-items: center; }
+  .p-space svg { width: 96px; height: auto; }
+  .p-space .dims { font-size: 0.85rem; display: grid; gap: 6px; }
+  .p-space .dims p { border: 1px dashed var(--green); border-radius: 10px; padding: 6px 8px; }
+  .p-notes { margin-top: 12px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; list-style: none; padding: 0; font-size: 0.85rem; }
+  .p-notes li { display: flex; gap: 8px; }
+  .p-notes li::before { content: ""; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--pink); margin-top: 0.62em; }
+  @media (max-width: 960px) { .frame { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .p-main { grid-column: 1 / -1; } }
+  @media (max-width: 620px) { .frame { grid-template-columns: minmax(0, 1fr); } .p-notes { grid-template-columns: minmax(0, 1fr); } }
+
+  /* steps */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; counter-reset: s; }
+  .steps li { counter-increment: s; position: relative; background: #fff; border: 2px solid var(--pink-mid); border-radius: 20px; padding: 18px 18px 18px 74px; min-height: 96px; display: grid; align-content: center; font-family: var(--font-display); font-weight: 900; font-size: 1.15rem; line-height: 1.35; min-width: 0; }
+  .steps li::before { content: counter(s); position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 44px; height: 44px; border-radius: 50%; background: var(--pink); color: #fff; display: grid; place-items: center; font-size: 1.4rem; }
+  .steps li:not(:last-child)::after { content: ""; position: absolute; right: -17px; top: 50%; translate: 0 -50%; border: 9px solid transparent; border-left-color: var(--pink-mid); }
+  .steps small { font-family: var(--font-body); font-weight: 600; font-size: 0.82rem; color: var(--ink-soft); }
+  @media (max-width: 760px) { .steps { grid-template-columns: minmax(0, 1fr); gap: 12px; } .steps li:not(:last-child)::after { display: none; } }
+
+  /* cta band */
+  .cta { padding-block: clamp(26px, 4vw, 40px); }
+  .cta-band { background: var(--green); color: #fff; border-radius: 28px; padding: clamp(18px, 3vw, 30px); display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 20px; align-items: center; }
+  .cta-copy { display: grid; gap: 12px; min-width: 0; }
+  .cta-copy h2 { font-size: clamp(1.35rem, 1rem + 1.5vw, 2rem); }
+  .cta-copy .chip { justify-self: start; background: #fff; color: var(--ink); border-radius: 999px; padding: 8px 20px; font-family: var(--font-display); font-weight: 900; }
+  .cta-face { position: relative; }
+  .cta-face img { width: 116px; height: 116px; border-radius: 50%; border: 4px solid #fff; object-fit: cover; }
+  .cta-face .say { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); white-space: nowrap; background: #fff; color: var(--ink); border-radius: 14px; padding: 4px 12px; font-size: 0.82rem; font-weight: 800; }
+  .cta-face .lbadge { position: absolute; right: -6px; bottom: -4px; width: 46px; height: 46px; border-radius: 50%; background: var(--line-green); border: 3px solid #fff; display: grid; place-items: center; font-size: 0.62rem; font-weight: 900; }
+  .cta-qr { background: #fff; border-radius: 18px; padding: 10px; display: grid; justify-items: center; gap: 2px; color: var(--green-deep); font-size: 0.75rem; font-weight: 800; }
+  .cta-qr img { width: 112px; height: 112px; image-rendering: pixelated; }
+  @media (max-width: 860px) { .cta-band { grid-template-columns: minmax(0, 1fr) auto; } .cta-qr { display: none; } }
+  @media (max-width: 520px) { .cta-band { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; } .cta-copy .chip { justify-self: center; } .cta-face { order: -1; } }
 
   /* support */
-  .support-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; list-style: none; margin: 0; padding: 0; }
-  .support-grid li { background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 20px 18px 22px; display: grid; gap: 8px; align-content: start; min-width: 0; }
-  .support-grid .ico { width: 54px; height: 54px; border-radius: 50%; background: var(--yellow-soft); display: grid; place-items: center; border: 2px solid var(--ink); }
-  .support-grid .ico svg { width: 28px; height: 28px; }
-  .support-grid p { font-size: 0.92rem; color: var(--ink-soft); }
-  .free { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; background: var(--card); border-radius: 24px; border: 2px dashed var(--coral-deep); padding: 16px 20px; }
-  .free strong { font-family: var(--font-display); font-size: clamp(1.05rem, 0.95rem + 0.6vw, 1.3rem); }
-  .free strong em { font-style: normal; color: var(--coral-deep); }
-  .tantou { display: flex; align-items: center; gap: 14px; margin-left: auto; }
-  .tantou img { width: 76px; height: 76px; border-radius: 50%; border: 3px solid var(--card); box-shadow: 0 0 0 2px var(--ink); object-fit: cover; }
-  .bubble { position: relative; background: var(--mint); border-radius: 18px; padding: 10px 16px; font-weight: 700; font-size: 0.92rem; max-width: 17em; }
-  .bubble::before { content: ""; position: absolute; left: -8px; top: 50%; translate: 0 -50%; border: 8px solid transparent; border-right-color: var(--mint); border-left: 0; }
-  @media (max-width: 899px) { .support-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tantou { margin-left: 0; } }
-  @media (max-width: 420px) { .support-grid { grid-template-columns: minmax(0, 1fr); } }
+  .support { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; list-style: none; margin: 0; padding: 0; }
+  .support li { background: #fff; border-radius: 22px; padding: 18px 16px 20px; display: grid; gap: 8px; align-content: start; min-width: 0; border: 2px solid var(--pink-mid); }
+  .support img { width: 72px; height: 72px; object-fit: contain; }
+  .support p { font-size: 0.92rem; color: var(--ink-soft); }
+  @media (max-width: 899px) { .support { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 440px) { .support { grid-template-columns: minmax(0, 1fr); } }
 
   /* market */
   .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 20px 20px 18px; display: grid; gap: 2px; align-content: start; min-width: 0; }
-  .stat .num { font-size: clamp(2rem, 1.4rem + 2vw, 2.7rem); color: var(--coral-deep); line-height: 1.2; }
-  .stat .label { font-weight: 700; }
+  .stat { background: #fff; border-radius: 22px; padding: 18px 20px; display: grid; gap: 2px; align-content: start; min-width: 0; border: 1px solid var(--line); }
+  .stat .num { font-family: var(--font-display); font-weight: 900; font-size: clamp(2rem, 1.4rem + 2vw, 2.7rem); color: var(--pink); line-height: 1.2; }
+  .stat .label { font-weight: 800; }
   .stat .sub { font-size: 0.85rem; color: var(--muted); }
   .facts { margin-top: 14px; display: grid; gap: 8px; list-style: none; padding: 0; }
-  .facts li { background: var(--card); border-radius: 16px; padding: 10px 16px; border-left: 6px solid var(--yellow); font-size: 0.95rem; }
-  .news { margin-top: 26px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-  .news a { display: grid; gap: 6px; background: var(--card); border: 2px solid var(--ink); border-radius: 20px; padding: 16px 18px; text-decoration: none; min-width: 0; }
+  .facts li { background: #fff; border-radius: 16px; padding: 10px 16px; border-left: 6px solid var(--yellow); font-size: 0.95rem; }
+  .news { margin-top: 22px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .news a { display: grid; gap: 6px; background: #fff; border: 2px solid var(--pink-mid); border-radius: 20px; padding: 16px 18px; text-decoration: none; min-width: 0; }
   .news .meta { font-size: 0.8rem; color: var(--muted); }
-  .news .head { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.5; }
-  .news .more { font-size: 0.82rem; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .news .head { font-family: var(--font-display); font-weight: 900; font-size: 1.05rem; line-height: 1.5; }
+  .news .more { font-size: 0.82rem; font-weight: 800; color: var(--pink-deep); text-decoration: underline; text-underline-offset: 3px; }
   @media (max-width: 760px) { .stats, .news { grid-template-columns: minmax(0, 1fr); } }
 
   /* space */
-  .space { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 26px; align-items: start; }
-  .diagram { background: var(--card); border: 2px solid var(--ink); border-radius: 24px; padding: 18px; }
+  .space { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 24px; align-items: start; }
+  .diagram { background: #fff; border: 2px solid var(--green); border-radius: 24px; padding: 16px; }
   .diagram svg { width: 100%; height: auto; display: block; }
-  .space-main { display: grid; gap: 16px; min-width: 0; }
-  .big-size { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.8rem, 1.2rem + 2.4vw, 2.6rem); line-height: 1.2; }
-  .big-size small { display: block; font-size: 0.95rem; font-weight: 700; color: var(--ink-soft); margin-top: 6px; }
-  .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-  .checks li { position: relative; padding-left: 28px; }
-  .checks li::before { content: ""; position: absolute; left: 3px; top: 0.55em; width: 14px; height: 14px; border-radius: 50%; background: var(--coral); border: 2px solid var(--ink); }
-  .spec { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 6px 18px; }
+  .space-main { display: grid; gap: 14px; min-width: 0; }
+  .big-size { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.4rem); line-height: 1.2; }
+  .big-size small { display: block; font-size: 0.95rem; font-weight: 800; color: var(--ink-soft); margin-top: 6px; }
+  .dots { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .dots li { position: relative; padding-left: 24px; }
+  .dots li::before { content: ""; position: absolute; left: 4px; top: 0.62em; width: 11px; height: 11px; border-radius: 50%; background: var(--pink); }
+  .spec { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 4px 18px; }
   .spec dl { margin: 0; display: grid; }
-  .spec dl div { display: grid; grid-template-columns: 7.5em minmax(0, 1fr); gap: 12px; padding-block: 9px; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+  .spec dl div { display: grid; grid-template-columns: 7em minmax(0, 1fr); gap: 12px; padding-block: 9px; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
   .spec dl div:last-child { border-bottom: 0; }
-  .spec dt { color: var(--muted); font-weight: 700; }
+  .spec dt { color: var(--muted); font-weight: 800; }
   .spec dd { margin: 0; }
   @media (max-width: 860px) { .space { grid-template-columns: minmax(0, 1fr); } }
 
   /* cost */
-  .equation { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1.1fr); gap: 12px; align-items: stretch; }
-  .eq-box { background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 18px 16px; display: grid; gap: 4px; align-content: center; text-align: center; min-width: 0; }
-  .eq-box .what { font-weight: 700; font-size: 0.95rem; }
-  .eq-box .price { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); color: var(--coral-deep); line-height: 1.2; }
-  .eq-box .price.range { font-size: clamp(1.3rem, 0.9rem + 1.2vw, 1.8rem); white-space: nowrap; }
-  .eq-box.total { background: var(--yellow); }
-  .eq-box.total .price { color: var(--ink); font-size: clamp(2rem, 1.4rem + 2.2vw, 2.9rem); }
-  .op { align-self: center; font-family: var(--font-display); font-weight: 900; font-size: 2rem; }
-  @media (max-width: 760px) { .equation { grid-template-columns: minmax(0, 1fr); } .op { justify-self: center; line-height: 1; } }
+  .cost-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .cost-card { background: #fff; border-radius: 22px; padding: 20px; display: grid; gap: 10px; align-content: start; min-width: 0; border: 2px solid var(--line); }
+  .cost-card.main { border-color: var(--pink); }
+  .cost-card .amount { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem); color: var(--pink); line-height: 1.25; }
+  .cost-card .amount small { display: block; font-size: 0.95rem; color: var(--ink); }
+  .cost-card ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; font-size: 0.95rem; }
+  @media (max-width: 860px) { .cost-grid { grid-template-columns: minmax(0, 1fr); } }
 
-  /* sales */
-  .sales { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 22px; align-items: start; }
-  .tbl { background: var(--card); border-radius: 22px; border: 2px solid var(--ink); overflow: hidden; }
-  .tbl .scroll { overflow-x: auto; }
+  /* sales + simulation */
+  .sales { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+  .tbl { background: #fff; border-radius: 22px; border: 2px solid var(--pink-mid); overflow: hidden; }
   table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-  th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
-  thead th { background: var(--ink); color: var(--paper); font-size: 0.85rem; }
+  th, td { padding: 11px 16px; text-align: left; border-bottom: 1px solid var(--line); }
+  thead th { background: var(--pink); color: #fff; font-size: 0.88rem; }
   tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
-  tbody th { font-weight: 700; }
-  td.keep { color: var(--good); font-weight: 700; }
+  tbody th { font-weight: 800; }
   .traffic { display: grid; gap: 12px; }
-  .tcard { border-radius: 20px; padding: 16px 18px; border: 2px solid var(--ink); display: grid; gap: 2px; }
+  .tcard { border-radius: 20px; padding: 14px 18px; display: grid; gap: 2px; }
   .tcard.hi { background: var(--yellow); }
-  .tcard.lo { background: var(--coral-soft); }
-  .tcard .who { font-weight: 700; font-size: 0.92rem; }
-  .tcard .what { font-family: var(--font-display); font-weight: 900; font-size: 1.3rem; }
-  .formula { margin-top: 18px; background: var(--ink); color: var(--paper); border-radius: 18px; padding: 14px 18px; font-family: var(--font-display); font-weight: 700; text-align: center; }
-  .formula b { color: var(--yellow); }
-  .hint { margin-top: 14px; background: var(--card); border-radius: 18px; padding: 14px 18px; border-left: 6px solid var(--mint); font-size: 0.95rem; }
-  @media (max-width: 860px) { .sales { grid-template-columns: minmax(0, 1fr); } }
-  @media (max-width: 560px) {
-    .tbl table, .tbl tbody { display: block; }
-    .tbl thead { display: none; }
-    .tbl tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--line); padding: 10px 14px; gap: 2px 12px; }
-    .tbl tbody tr:last-child { border-bottom: 0; }
-    .tbl th, .tbl td { border: 0; padding: 0; white-space: normal; }
-    .tbl tbody th { grid-column: 1 / -1; font-size: 1rem; }
-    .tbl td::before { content: attr(data-label); display: block; font-size: 0.75rem; color: var(--muted); font-weight: 700; }
-  }
+  .tcard.lo { background: #fff; border: 2px solid var(--pink-mid); }
+  .tcard .who { font-weight: 800; font-size: 0.92rem; }
+  .tcard .what { font-family: var(--font-display); font-weight: 900; font-size: 1.25rem; }
+  .sim { margin-top: 28px; background: #fff; border-radius: 26px; border: 3px solid var(--pink); padding: clamp(18px, 3vw, 28px); display: grid; gap: 18px; }
+  .sim h3 { font-size: clamp(1.15rem, 1rem + 0.7vw, 1.45rem); }
+  .sim-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+  .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 14px; }
+  .field { display: grid; gap: 4px; min-width: 0; font-weight: 800; font-size: 0.9rem; }
+  .field .in { display: flex; align-items: center; gap: 6px; }
+  .field input, .field select { width: 100%; min-width: 0; min-height: 46px; padding: 8px 12px; border-radius: 12px; border: 2px solid var(--line); background: var(--cream); color: var(--ink); font-size: 1.05rem; font-family: inherit; font-variant-numeric: tabular-nums; }
+  .field .fixed { min-height: 46px; display: flex; align-items: center; padding: 8px 12px; border-radius: 12px; background: var(--pink-soft); font-size: 1.05rem; }
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; }
+  .presets button { font: inherit; font-weight: 800; font-size: 0.85rem; padding: 6px 14px; border-radius: 999px; border: 2px solid var(--pink-mid); background: #fff; color: var(--ink); cursor: pointer; }
+  .presets button[aria-pressed="true"] { background: var(--pink); border-color: var(--pink); color: #fff; }
+  .result { background: var(--cream); border-radius: 20px; padding: 16px 18px; display: grid; gap: 8px; min-width: 0; }
+  .result dl { margin: 0; display: grid; gap: 6px; }
+  .result dl div { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dashed var(--line); padding-bottom: 6px; font-variant-numeric: tabular-nums; }
+  .result dt { color: var(--ink-soft); }
+  .result dd { margin: 0; font-weight: 800; text-align: right; }
+  .result .total { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-family: var(--font-display); font-weight: 900; }
+  .result .total .v { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.2rem); font-variant-numeric: tabular-nums; }
+  .result .total .v.neg { color: var(--bad); }
+  .result .total .v.pos { color: var(--green-deep); }
+  .result .be { font-size: 0.9rem; font-weight: 700; }
+  .warn { background: var(--pink-soft); border-radius: 16px; padding: 12px 16px; font-size: 0.92rem; }
+  @media (max-width: 860px) { .sales, .sim-grid { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 420px) { .fields { grid-template-columns: minmax(0, 1fr); } }
 
   /* original */
   .orig { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-  .orig-points { display: grid; gap: 14px; }
-  .orig-points .lead { font-family: var(--font-display); font-weight: 900; font-size: 1.3rem; }
-  .compare-pill { display: flex; flex-wrap: wrap; gap: 10px; }
-  .compare-pill span { border-radius: 16px; padding: 10px 14px; font-size: 0.9rem; background: var(--card); border: 1.5px solid var(--line); }
-  .compare-pill span b { font-family: var(--font-display); font-size: 1.35rem; }
-  .compare-pill .ours { border-color: var(--ink); background: var(--yellow-soft); }
   .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .gallery figure { background: var(--card); border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+  .gallery figure { margin: 0; background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
   .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-  .gallery figcaption { margin: 0; padding: 6px 10px 8px; font-size: 0.82rem; color: var(--ink-soft); font-weight: 700; }
-  .cases { margin-top: 22px; background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 16px 20px; display: grid; gap: 10px; }
+  .gallery figcaption { padding: 6px 10px 8px; font-size: 0.82rem; font-weight: 800; color: var(--ink-soft); }
+  .cases { margin-top: 20px; background: #fff; border: 2px solid var(--pink-mid); border-radius: 22px; padding: 16px 20px; display: grid; gap: 8px; }
   .cases ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
   .cases a { text-underline-offset: 3px; }
   @media (max-width: 860px) { .orig { grid-template-columns: minmax(0, 1fr); } }
 
-  /* flow */
-  .flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; counter-reset: step; }
-  .flow li { counter-increment: step; background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 18px 16px; display: grid; gap: 6px; align-content: start; min-width: 0; position: relative; }
-  .flow li::before { content: counter(step); width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--yellow); border: 2px solid var(--ink); font-family: var(--font-display); font-weight: 900; }
-  .flow li:first-child::before { background: var(--line-green); color: #fff; border-color: var(--line-green-deep); }
-  .flow b { font-family: var(--font-display); font-size: 1.05rem; }
-  .flow span { font-size: 0.88rem; color: var(--ink-soft); }
-  @media (max-width: 899px) { .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 420px) { .flow { grid-template-columns: minmax(0, 1fr); } }
-
   /* faq */
-  .faq { display: grid; gap: 10px; max-width: 52rem; }
-  .faq details { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 14px 18px; }
+  .faq { display: grid; gap: 10px; max-width: 54rem; }
+  .faq details { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 14px 18px; }
   .faq summary { cursor: pointer; font-weight: 800; list-style: none; display: flex; gap: 10px; align-items: baseline; }
   .faq summary::-webkit-details-marker { display: none; }
-  .faq summary::before { content: "Q"; font-family: var(--font-display); font-weight: 900; color: var(--coral-deep); }
+  .faq summary::before { content: "Q"; font-family: var(--font-display); font-weight: 900; color: var(--pink); }
   .faq details p { margin-top: 8px; color: var(--ink-soft); font-size: 0.95rem; }
 
-  /* cta */
-  .cta { background: var(--mint); }
-  .cta .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 26px; align-items: center; }
-  .cta-face img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--card); box-shadow: 0 0 0 2px var(--ink); object-fit: cover; }
-  .cta-copy { display: grid; gap: 12px; min-width: 0; }
-  .cta-copy .bubble { background: var(--card); max-width: none; justify-self: start; }
-  .cta-copy .bubble::before { border-right-color: var(--card); }
-  .cta-copy h2 { font-size: clamp(1.7rem, 1.2rem + 2vw, 2.5rem); }
-  .cta-copy h2 .g { color: var(--line-green-deep); }
-  .qr { background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 14px; display: grid; gap: 6px; justify-items: center; }
-  .qr img { width: 150px; height: 150px; image-rendering: pixelated; }
-  .qr span { font-size: 0.8rem; font-weight: 800; color: var(--line-green-deep); }
-  @media (max-width: 760px) { .cta .wrap { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; } .cta-copy { justify-items: center; } .cta-copy .bubble::before { display: none; } .qr { display: none; } }
-
   /* footer */
-  .foot { padding-block: 40px 48px; font-size: 0.82rem; color: var(--muted); }
-  .foot .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; }
+  .foot { background: #fff; border-top: 1px solid var(--line); padding-block: 36px 44px; font-size: 0.82rem; color: var(--muted); }
+  .foot .wrap { display: grid; gap: 22px; }
+  .foot .brandline { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; color: var(--ink); }
+  .foot .brandline .logo { font-family: var(--font-display); font-weight: 900; font-size: 1.9rem; color: var(--green); line-height: 1; }
+  .foot .brandline .sep { width: 1px; height: 30px; background: var(--line); }
+  .foot .brandline .smile { margin-left: auto; font-family: var(--font-hand); color: var(--ink-soft); }
+  .foot .brandline .smile b { color: var(--pink); }
+  .foot .cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
   .foot h3 { font-size: 0.95rem; color: var(--ink); margin-bottom: 6px; }
   .foot ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
   .foot a { text-underline-offset: 3px; word-break: break-all; }
-  .foot .brandline { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
-  @media (max-width: 760px) { .foot .wrap { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 760px) { .foot .cols { grid-template-columns: minmax(0, 1fr); } .foot .brandline .smile { margin-left: 0; } }
 
-  /* mobile line bar */
-  .line-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(255, 250, 240, 0.96); border-top: 1px solid var(--line); }
-  .line-bar .btn { width: 100%; }
+  .line-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(255, 255, 255, 0.96); border-top: 1px solid var(--line); }
+  .line-bar .btn-line { width: 100%; box-shadow: none; }
   @media (min-width: 900px) { .line-bar { display: none; } }
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position: absolute" aria-hidden="true">
-  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6c1.4-1.6 2-3.2 2-4.9C22 6.6 17.5 3 12 3zm-4 10H6.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0V12h1a.5.5 0 0 1 0 1zm2-.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0zm4.5 0a.5.5 0 0 1-.9.3L12 10.1v2.4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .9-.3L13.5 11V8.5a.5.5 0 0 1 1 0zm3-2.5a.5.5 0 0 1 0 1H16v1h1.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H16v1z"/></symbol>
-</svg>
-
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="BANTEX ガチャ導入サポート トップへ">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#f7c84b" stroke="#1f3133" stroke-width="3"/><path d="M4 32h56" stroke="#1f3133" stroke-width="3"/><circle cx="32" cy="32" r="7" fill="#fff" stroke="#1f3133" stroke-width="3"/></svg>
-      <span>BANTEX <small>ガチャ導入サポート</small></span>
-    </a>
+    <a class="brand" href="#top" aria-label="BANTEX ガチャ導入サポート トップへ"><span class="logo">BANTEX</span><small>ガチャ導入サポート</small></a>
     <nav class="head-nav" aria-label="ページ内の移動">
       <a href="#support">サポート</a>
       <a href="#space">スペース</a>
       <a href="#cost">費用</a>
-      <a href="#sales">売上</a>
+      <a href="#sales">売上と収支</a>
       <a href="#original">オリジナル</a>
-      <a href="#flow">流れ</a>
     </nav>
-    <a class="btn btn-line head-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで相談</a>
+    <a class="btn-line head-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><span class="lg" aria-hidden="true">LINE</span>LINEで相談<span class="arrow" aria-hidden="true">›</span></a>
   </div>
 </header>
 
@@ -287,46 +318,119 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <span class="eyebrow">小さなお店・施設のオーナーさまへ</span>
-        <h1><span class="nb">空きスペースを、</span><br><span class="nb"><span class="accent">ガチャ</span>で</span><span class="nb">利用しませんか？</span></h1>
-        <p class="ribbon">面倒なことは、担当が全部サポート。</p>
-        <p class="hero-lead">1ボックス（上下2台）から、小さく始められます。ディスプレイのデザインも、商品選びも、オリジナル制作も、保守も。LINEで相談すれば、すぐに始められます。</p>
-        <div class="hero-actions">
-          <a class="btn btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで相談する</a>
-          <a class="btn" href="#support">くわしく見る</a>
-        </div>
-        <ul class="chips">
-          <li>スペース <b>幅60cm×奥行1m</b>から</li>
-          <li>費用 <b>約8万円</b>から（税別）</li>
-          <li>サポートは<b>無料</b>（ガチャ商品のご購入で）</li>
+        <span class="pill">お店・施設の空きスペースを、ワクワクする売場に。</span>
+        <h1><span class="nb">小さく始める</span><br><span class="nb">ガチャ売場。</span></h1>
+        <p class="lead1"><span class="nb">面倒なことは、</span><span class="nb">担当者におまかせ。</span></p>
+        <p class="lead2">デザインも、商品選びも。<br><span class="pk"><span class="nb">始めた後まで、</span><span class="nb">まとめてサポート！</span></span></p>
+        <ul class="tiles">
+          <li><img src="img/icon-design.png" width="256" height="256" alt="">ディスプレイ<br>デザイン</li>
+          <li><img src="img/icon-items.png" width="256" height="256" alt="">アイテム選定</li>
+          <li><img src="img/icon-original.png" width="256" height="256" alt="">オリジナル<br>制作</li>
+          <li><img src="img/icon-support.png" width="256" height="256" alt="">保守サポート</li>
         </ul>
+        <p class="anshin">窓口は<span class="pk">担当者が付くので安心！</span></p>
+        <p>準備から運営の相談まで、伴走します。</p>
+        <div class="hero-actions">
+          <a class="btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><span class="lg" aria-hidden="true">LINE</span>LINEで相談する<span class="arrow" aria-hidden="true">›</span></a>
+        </div>
       </div>
-      <figure>
-        <div class="photo"><img src="img/hero-1536.jpg" srcset="img/hero-800.jpg 800w, img/hero-1536.jpg 1536w" sizes="(max-width: 899px) 100vw, 520px" width="1536" height="1024" alt="雑貨店のレジ横の壁ぎわに、上下2段のガチャ筐体が2ボックス並び、親子が商品を選んでいる様子のイメージ"></div>
-      </figure>
+      <div class="hero-visual">
+        <img class="main" src="img/hero-1024.jpg" srcset="img/hero-640.jpg 640w, img/hero-1024.jpg 1024w" sizes="(max-width: 899px) 92vw, 480px" width="1024" height="1536" alt="女性の担当者が、上下2段のガチャ筐体を手で示して紹介している様子">
+        <p class="bubble-hand">ガチャで<br>お店に、もっと笑顔を！<span class="heart" aria-hidden="true">♥</span></p>
+        <p class="bubble-round">小さな<br>スペースで<br>大きな<br>ワクワクを♪</p>
+        <div class="badges">
+          <p class="badge-y">筐体<br><b>1ボックス</b>から</p>
+          <p class="badge-y">オリジナル<br><b>100個</b>から<small>商品限定・制作は別途お見積り</small></p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="tint" id="support">
+  <section class="price" id="price">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="kicker">担当サポート</span>
-        <h2><span class="nb">面倒なことは、</span><span class="nb">担当が全部サポート</span></h2>
-        <p>ガチャを置くときに手間がかかるところは、担当がまとめて引き受けます。</p>
-      </div>
-      <ul class="support-grid">
-        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg></span><h3>ディスプレイのデザイン</h3><p>台紙やPOPを作ります。お店の雰囲気に合わせて、目に留まる売場にします。</p></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M6 9h12M9 21h6M12 15v6"/></svg></span><h3>ガチャ商品の選定</h3><p>お店の客層に合う商品を、担当が選んでご提案します。</p></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></span><h3>オリジナル商品の制作</h3><p>お店だけ・地域だけの商品を作れます。100個から作れる商品もあります。</p></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span><h3>保守・アフター</h3><p>補充のやり方、商品の入れ替え、困ったときの相談まで、担当が対応します。</p></li>
-      </ul>
-      <div class="free">
-        <strong>ガチャ商品のご購入で、サポートは<em>無料</em>です。</strong>
-        <div class="tantou">
-          <img src="img/line-icon.png" width="480" height="480" alt="LINEサポート担当のアイコン">
-          <p class="bubble">デザインも商品選びも、おまかせください！</p>
+      <div class="frame">
+        <div class="p-main">
+          <span class="p-tag">筐体・アイテム・ディスプレイ</span>
+          <p class="p-lead">おまかせスタート全部込み</p>
+          <p class="p-price"><span class="big">15万円</span><span class="sm">（税別）<br>から</span></p>
+          <p class="p-tax">税込165,000円〜</p>
+        </div>
+        <div class="p-pack">
+          <span class="ttl">パッケージ内容</span>
+          <ul>
+            <li>上下2台の筐体1ボックス</li>
+            <li>初回商品2種類・計80個</li>
+            <li>ディスプレイデザイン</li>
+            <li>導入サポート・基本送料</li>
+          </ul>
+        </div>
+        <div class="p-space">
+          <p class="ttl">設置目安 幅60cm × 奥行100cm</p>
+          <div class="body">
+            <svg viewBox="0 0 120 212" role="img" aria-label="筐体の大きさ。幅30cm、奥行40cm、高さ126cm">
+              <rect x="34" y="8" width="52" height="176" rx="8" fill="#ffffff" stroke="#2b1b15" stroke-width="2"/>
+              <rect x="40" y="18" width="40" height="44" rx="14" fill="#e2effa" stroke="#7a6760" stroke-width="1.5"/>
+              <rect x="40" y="70" width="40" height="22" rx="4" fill="#fff8ef" stroke="#7a6760" stroke-width="1.5"/>
+              <rect x="40" y="100" width="40" height="44" rx="14" fill="#fde6ee" stroke="#7a6760" stroke-width="1.5"/>
+              <rect x="40" y="152" width="40" height="22" rx="4" fill="#fff8ef" stroke="#7a6760" stroke-width="1.5"/>
+              <circle cx="42" cy="190" r="5" fill="#7a6760"/><circle cx="78" cy="190" r="5" fill="#7a6760"/>
+              <path d="M100 8 v180 M95 8 h10 M95 188 h10" stroke="#e8336d" stroke-width="2"/>
+              <path d="M34 206 h52 M34 201 v10 M86 201 v10" stroke="#e8336d" stroke-width="2"/>
+            </svg>
+            <div class="dims">
+              <p>本体：幅30×奥行40×高さ126cm</p>
+              <p>前に立つスペース込み。通路は別途確保。</p>
+            </div>
+          </div>
         </div>
       </div>
+      <ul class="p-notes">
+        <li>標準商品・基本配送地域のプランです。遠隔地・特殊設置は別途お見積り。</li>
+        <li>追加商品は購入ごとに、基本管理費1万円（税別）＋商品代・送料。</li>
+        <li>オリジナル制作・修理部品などは別途お見積り。</li>
+        <li>売上や利益を保証するものではありません。費用を含めた収支は<a href="#sim">シミュレーション</a>で確かめられます。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec-pink" style="padding-block: clamp(36px, 6vw, 56px)">
+    <div class="wrap">
+      <ol class="steps">
+        <li>LINEで相談<small>置きたい場所の写真を送るだけ。</small></li>
+        <li>担当者と内容決定<small>商品・デザイン・設置場所を決めます。</small></li>
+        <li>納品・設置後スタート<small>筐体は置くだけ。組み立ては不要です。</small></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-band">
+        <div class="cta-copy">
+          <h2><span class="nb">まずはLINEで、</span><span class="nb">気軽にスタート相談！</span></h2>
+          <p class="chip">置きたい場所の写真を送るだけ。</p>
+        </div>
+        <div class="cta-face"><img src="img/line-icon.png" width="480" height="480" alt="LINEサポート担当者のアイコン"><span class="say">私が担当します！</span><span class="lbadge" aria-hidden="true">LINE</span></div>
+        <div>
+          <a class="btn-line white" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><span class="lg" aria-hidden="true">LINE</span>LINEでスタート相談<span class="arrow" aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-pink" id="support">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">サポート</span>
+        <h2><span class="nb">担当者が付くので</span><span class="nb">安心！</span></h2>
+        <p>ガチャを始めるときに手間がかかるところは、担当者がまとめて引き受けます。</p>
+      </div>
+      <ul class="support">
+        <li><img src="img/icon-design.png" width="256" height="256" alt=""><h3>ディスプレイデザイン</h3><p>台紙やPOPなど、売場の見せ方をデザインします。</p></li>
+        <li><img src="img/icon-items.png" width="256" height="256" alt=""><h3>アイテム選定</h3><p>お店の客層や売価に合わせて、置く商品を担当者が選びます。</p></li>
+        <li><img src="img/icon-original.png" width="256" height="256" alt=""><h3>オリジナル制作</h3><p>お店だけ・地域だけの商品を作れます。100個から作れる商品もあります（商品は限られます）。制作は別途お見積りです。</p></li>
+        <li><img src="img/icon-support.png" width="256" height="256" alt=""><h3>保守サポート</h3><p>補充のやり方や困ったときの相談に、担当者が対応します。修理部品は別途お見積りです。</p></li>
+      </ul>
     </div>
   </section>
 
@@ -353,49 +457,43 @@
     </div>
   </section>
 
-  <section class="tint" id="space">
+  <section class="sec-pink" id="space">
     <div class="wrap">
       <div class="sec-head">
-        <span class="kicker"><b>2</b>必要なスペース</span>
-        <h2><span class="nb">必要なのは、</span><span class="nb">半畳より小さいスペース</span></h2>
-        <p>筐体の大きさは取扱説明書の寸法です。前に人が立って選べる場所を足して、必要なスペースを出しました。</p>
+        <span class="kicker"><b>2</b>設置の目安</span>
+        <h2><span class="nb">設置目安は</span><span class="nb">幅60cm×奥行100cm</span></h2>
+        <p>筐体の寸法は取扱説明書の値です。前に人が立つスペースと左右の余裕を見込んだご提案で、通路は別途確保していただきます。</p>
       </div>
       <div class="space">
         <div class="diagram">
-          <svg viewBox="0 0 420 590" role="img" aria-label="真上から見た図。壁ぎわに幅30cm・奥行40cmの筐体を置き、その前に奥行60cmの立つ場所をとると、全体で幅60cm・奥行1m。通路に面する場合は後ろに60cmを足して奥行1.6m。">
-            <rect x="0" y="0" width="420" height="590" fill="#ffffff"/>
-            <rect x="40" y="20" width="250" height="10" fill="#1f3133"/>
-            <text x="300" y="30" font-size="14" font-weight="700" fill="#1f3133">壁</text>
-            <rect x="88" y="30" width="96" height="128" fill="#bde3d2" stroke="#1f3133" stroke-width="2.5" rx="6"/>
-            <text x="136" y="88" font-size="16" font-weight="700" fill="#1f3133" text-anchor="middle">筐体</text>
-            <text x="136" y="108" font-size="14" fill="#1f3133" text-anchor="middle">30×40cm</text>
-            <rect x="40" y="158" width="192" height="192" fill="#fff1bf" stroke="#1f3133" stroke-width="2" stroke-dasharray="7 5" rx="6"/>
-            <rect x="94" y="248" width="84" height="32" rx="16" fill="#ee826f"/>
-            <circle cx="136" cy="256" r="15" fill="#fffaf0" stroke="#1f3133" stroke-width="3"/>
-            <path d="M136 238 v-20 M129 225 l7 -7 7 7" stroke="#1f3133" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="136" y="320" font-size="15" font-weight="700" fill="#1f3133" text-anchor="middle">前に立つ場所 60cm</text>
-            <rect x="40" y="350" width="192" height="192" fill="#eaf6f0" stroke="#5d6e6f" stroke-width="1.5" stroke-dasharray="3 5" rx="6"/>
-            <text x="136" y="440" font-size="14" fill="#3f5456" text-anchor="middle">通路に面するなら</text>
-            <text x="136" y="460" font-size="14" fill="#3f5456" text-anchor="middle">後ろを人が通る 60cm</text>
-            <path d="M40 558 h192" stroke="#d9604b" stroke-width="2.5"/>
-            <path d="M40 551 v14 M232 551 v14" stroke="#d9604b" stroke-width="2.5"/>
-            <text x="136" y="584" font-size="16" font-weight="900" fill="#d9604b" text-anchor="middle">幅60cm</text>
-            <path d="M262 30 v320" stroke="#d9604b" stroke-width="2.5"/>
-            <path d="M255 30 h14 M255 350 h14" stroke="#d9604b" stroke-width="2.5"/>
-            <text x="276" y="196" font-size="16" font-weight="900" fill="#d9604b">奥行1m</text>
-            <path d="M352 30 v512" stroke="#5d6e6f" stroke-width="1.5" stroke-dasharray="4 4"/>
-            <path d="M345 30 h14 M345 542 h14" stroke="#5d6e6f" stroke-width="1.5"/>
-            <text x="362" y="452" font-size="13" font-weight="700" fill="#3f5456">通路側</text>
-            <text x="362" y="470" font-size="13" font-weight="700" fill="#3f5456">1.6m</text>
+          <svg viewBox="0 0 400 470" role="img" aria-label="真上から見た図。壁ぎわに幅30cm・奥行40cmの筐体、その前に人が立つスペース。全体で幅60cm・奥行100cmが目安。通路は別途。">
+            <rect x="0" y="0" width="400" height="470" fill="#ffffff"/>
+            <rect x="40" y="20" width="250" height="10" fill="#2b1b15"/>
+            <text x="298" y="30" font-size="15" font-weight="700" fill="#2b1b15">壁</text>
+            <rect x="88" y="30" width="96" height="128" fill="#fde6ee" stroke="#2b1b15" stroke-width="2.5" rx="6"/>
+            <text x="136" y="88" font-size="16" font-weight="700" fill="#2b1b15" text-anchor="middle">筐体</text>
+            <text x="136" y="110" font-size="14" fill="#2b1b15" text-anchor="middle">30×40cm</text>
+            <rect x="40" y="158" width="192" height="192" fill="#fff3c4" stroke="#2b1b15" stroke-width="2" stroke-dasharray="7 5" rx="6"/>
+            <rect x="94" y="248" width="84" height="32" rx="16" fill="#e8336d"/>
+            <circle cx="136" cy="256" r="15" fill="#fff8ef" stroke="#2b1b15" stroke-width="3"/>
+            <path d="M136 238 v-20 M129 225 l7 -7 7 7" stroke="#2b1b15" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="136" y="322" font-size="15" font-weight="700" fill="#2b1b15" text-anchor="middle">前に立つスペース</text>
+            <rect x="40" y="350" width="192" height="64" fill="#e2f4e8" stroke="#7a6760" stroke-width="1.5" stroke-dasharray="3 5" rx="6"/>
+            <text x="136" y="388" font-size="15" font-weight="700" fill="#5a463e" text-anchor="middle">通路は別途</text>
+            <path d="M262 30 v320" stroke="#e8336d" stroke-width="2.5"/>
+            <path d="M255 30 h14 M255 350 h14" stroke="#e8336d" stroke-width="2.5"/>
+            <text x="274" y="196" font-size="17" font-weight="900" fill="#c81e57">奥行100cm</text>
+            <path d="M40 440 h192" stroke="#e8336d" stroke-width="2.5"/>
+            <path d="M40 433 v14 M232 433 v14" stroke="#e8336d" stroke-width="2.5"/>
+            <text x="136" y="464" font-size="17" font-weight="900" fill="#c81e57" text-anchor="middle">幅60cm</text>
           </svg>
-          <p class="note" style="text-align: center">図は縮尺どおりです。幅60cmは筐体2ボックス分の幅です。</p>
         </div>
         <div class="space-main">
-          <p class="big-size">幅60cm×奥行1mから<small>約0.6㎡。半畳より小さいスペースです。</small></p>
-          <ul class="checks">
-            <li>2ボックス（4台）を横に並べても、幅は60cmのままです。</li>
-            <li>補充と集金は前面だけで行えるので、壁ぎわに置けます。</li>
-            <li>通路に面して置くなら、後ろを人が通れるよう奥行1.6mにします。</li>
+          <p class="big-size">幅60cm×奥行100cm<small>前に立つスペース込みの目安です。通路は別途確保してください。</small></p>
+          <ul class="dots">
+            <li>メーカーが保証する最低寸法ではありません。置く場所の状況に合わせて、担当者と確認します。</li>
+            <li>通路、車いすの通行、保守作業、混雑時の余裕は、別に確保してください。</li>
+            <li>補充と集金は筐体の前面から行えます。</li>
             <li>倒れないよう、ひもやチェーンで壁などに固定します。</li>
           </ul>
           <div class="spec">
@@ -417,52 +515,95 @@
   <section id="cost">
     <div class="wrap">
       <div class="sec-head">
-        <span class="kicker"><b>3</b>始める費用</span>
-        <h2><span class="nb">最低いくらで</span><span class="nb">始められる？</span></h2>
+        <span class="kicker"><b>3</b>費用</span>
+        <h2><span class="nb">おまかせスタート</span><span class="nb">全部込み15万円（税別）から</span></h2>
+        <p>最初に必要なものは、まとめてご用意します。2回目以降の商品の追加は、購入ごとにお支払いいただきます。</p>
       </div>
-      <div class="equation">
-        <div class="eq-box"><span class="what">筐体 1ボックス（上下2台）</span><span class="price">65,000円</span></div>
-        <span class="op" aria-hidden="true">＋</span>
-        <div class="eq-box"><span class="what">最初の商品 2種類×1袋</span><span class="price range">約1.5万〜1.8万円</span></div>
-        <span class="op" aria-hidden="true">＝</span>
-        <div class="eq-box total"><span class="what">合計</span><span class="price">約8万円から</span></div>
+      <div class="cost-grid">
+        <div class="cost-card main">
+          <h3>初回：おまかせスタート</h3>
+          <p class="amount">15万円（税別）から<small>税込165,000円〜</small></p>
+          <ul>
+            <li>上下2台の筐体1ボックス</li>
+            <li>初回商品2種類・計80個</li>
+            <li>ディスプレイデザイン</li>
+            <li>導入サポート</li>
+            <li>基本送料（基本配送地域）</li>
+          </ul>
+        </div>
+        <div class="cost-card">
+          <h3>2回目以降：商品の追加</h3>
+          <p class="amount">購入ごとに<small>基本管理費1万円（税別）＋商品代＋送料</small></p>
+          <ul>
+            <li>基本管理費は月額ではなく、商品を購入するたびにかかります。</li>
+            <li>商品代は、商品と数によって変わります。</li>
+          </ul>
+        </div>
+        <div class="cost-card">
+          <h3>別途お見積り</h3>
+          <ul>
+            <li>遠隔地への配送</li>
+            <li>特殊な設置</li>
+            <li>オリジナル制作</li>
+            <li>修理部品</li>
+          </ul>
+        </div>
       </div>
-      <p class="note" style="margin-top: 14px">価格は税別です。商品は問屋の公開価格の例で、1袋は20〜40個入りです。送料は別途かかります。ガチャ商品のご購入で、ディスプレイのデザインなどのサポートは無料です。</p>
     </div>
   </section>
 
-  <section class="tint" id="sales">
+  <section class="sec-pink" id="sales">
     <div class="wrap">
       <div class="sec-head">
-        <span class="kicker"><b>4</b>売上の目安</span>
-        <h2><span class="nb">売上はどれくらい？</span><span class="nb">多い場所・少ない場所</span></h2>
-        <p>売上は、置く場所の人通りにほぼ比例します。1ボックス（上下2台）の1か月の目安です。</p>
+        <span class="kicker"><b>4</b>売上と収支</span>
+        <h2><span class="nb">売上はどれくらい？</span><span class="nb">費用を引くとどうなる？</span></h2>
+        <p>売上は、置く場所の人通りにほぼ比例します。1ボックス（上下2台）の1か月の売上の目安です。</p>
       </div>
       <div class="sales">
         <div class="tbl">
-          <div class="scroll">
-            <table>
-              <thead><tr><th scope="col">置く場所</th><th scope="col">月の売上</th><th scope="col">月の手残り</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">駅構内・駅ビル</th><td data-label="月の売上">1.5万〜3万円</td><td class="keep" data-label="月の手残り">約3,000〜6,000円</td></tr>
-                <tr><th scope="row">大型商業施設</th><td data-label="月の売上">1.2万〜2.5万円</td><td class="keep" data-label="月の手残り">約2,400〜5,000円</td></tr>
-                <tr><th scope="row">道の駅</th><td data-label="月の売上">0.8万〜1.5万円</td><td class="keep" data-label="月の手残り">約1,600〜3,000円</td></tr>
-                <tr><th scope="row">ホテル・旅館</th><td data-label="月の売上">0.5万〜1.2万円</td><td class="keep" data-label="月の手残り">約1,000〜2,400円</td></tr>
-                <tr><th scope="row">飲食店・スーパー</th><td data-label="月の売上">0.5万〜1万円</td><td class="keep" data-label="月の手残り">約1,000〜2,000円</td></tr>
-                <tr><th scope="row">病院・クリニック</th><td data-label="月の売上">0.3万〜0.8万円</td><td class="keep" data-label="月の手残り">約600〜1,600円</td></tr>
-              </tbody>
-            </table>
-          </div>
+          <table>
+            <thead><tr><th scope="col">置く場所</th><th scope="col">1ボックスの月の売上（税込）</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">駅構内・駅ビル</th><td>1.5万〜3万円</td></tr>
+              <tr><th scope="row">大型商業施設</th><td>1.2万〜2.5万円</td></tr>
+              <tr><th scope="row">道の駅</th><td>0.8万〜1.5万円</td></tr>
+              <tr><th scope="row">ホテル・旅館</th><td>0.5万〜1.2万円</td></tr>
+              <tr><th scope="row">飲食店・スーパー</th><td>0.5万〜1万円</td></tr>
+              <tr><th scope="row">病院・クリニック</th><td>0.3万〜0.8万円</td></tr>
+            </tbody>
+          </table>
         </div>
         <div class="traffic">
           <div class="tcard hi"><span class="who">1日の人通り1,000人以上</span><span class="what">売上が安定しやすい</span></div>
           <div class="tcard lo"><span class="who">1日の人通り500人未満</span><span class="what">月5,000円以下が目安</span></div>
-          <p class="note">人通りと売上の目安は、ガチャ設置事業者の株式会社SOARAの公表値です。</p>
+          <p class="note">売上と人通りの目安は、ガチャ設置事業者の株式会社SOARAの公表値です（2026年4月16日）。</p>
         </div>
       </div>
-      <p class="formula">月の手残り ＝ 月の売上 × <b>約20%</b>（版権品の場合）</p>
-      <p class="hint">人通りの少ないお店では、売上よりも、話題づくりやお子さまの楽しみとして活かす方法もあります。オリジナル商品なら、1回あたりの手残りも増えます。</p>
-      <p class="note" style="margin-top: 12px">出典：株式会社SOARA「ガチャガチャ1台あたりの月間売上」（2026年4月16日、2段型1台の実績と立地別の目安）。手残りは、商品の仕入れを販売価格の75%、ロス3%として、税抜で計算しました。</p>
+
+      <div class="sim" id="sim">
+        <h3>商品を追加したときの収支シミュレーション（1回分）</h3>
+        <div class="sim-grid">
+          <form class="fields" id="sim-form" autocomplete="off">
+            <label class="field" for="sim-price">1回の売価（税込）<span class="in"><select id="sim-price"><option value="100">100円</option><option value="200">200円</option><option value="300">300円</option><option value="400" selected>400円</option><option value="500">500円（別売りの部品が必要）</option></select></span></label>
+            <label class="field" for="qty">追加する個数<span class="in"><input id="qty" type="number" inputmode="numeric" min="1" step="1" value="80"><span>個</span></span></label>
+            <label class="field" for="goods">商品代（合計・税別）<span class="in"><input id="goods" type="number" inputmode="numeric" min="0" step="100" value="25200"><span>円</span></span></label>
+            <label class="field" for="ship">送料（税別）<span class="in"><input id="ship" type="number" inputmode="numeric" min="0" step="100" value="1000"><span>円</span></span></label>
+            <div class="field">基本管理費（税別）<span class="fixed">10,000円</span></div>
+            <div class="field">例<div class="presets"><button type="button" data-p="400" data-q="80" data-g="25200" aria-pressed="true">標準商品80個・400円</button><button type="button" data-p="300" data-q="80" data-g="25200" aria-pressed="false">同じ商品を300円で</button></div></div>
+          </form>
+          <div class="result" aria-live="polite">
+            <dl>
+              <div><dt>全部売れたときの売上（税込）</dt><dd id="r-sales-in">32,000円</dd></div>
+              <div><dt>売上（税抜）</dt><dd id="r-sales">29,091円</dd></div>
+              <div><dt>費用（商品代＋基本管理費＋送料）</dt><dd id="r-cost">36,200円</dd></div>
+            </dl>
+            <p class="total"><span>差し引き</span><span class="v neg" id="r-total">−7,109円</span></p>
+            <p class="be" id="r-be">この条件では、すべて売れても赤字です。</p>
+          </div>
+        </div>
+        <p class="warn">表示している例は、標準商品80個（商品代25,200円）を1個400円（税込）で、すべて売った場合です。詰まり・売れ残りなどのロス、設置場所の家賃・人件費は含みません。少量ずつの追加では、費用が売上を上回ることがあります。売価・商品・追加する数は担当者と相談して決めます。売上や利益を保証するものではありません。</p>
+      </div>
+      <p class="note" style="margin-top: 12px">商品代・送料は例です。実際の金額は、商品と配送先によってお見積りします。</p>
     </div>
   </section>
 
@@ -474,23 +615,16 @@
         <p>お店だけ・地域だけのガチャで、ほかにない売場にできます。</p>
       </div>
       <div class="orig">
-        <div class="orig-points">
-          <p class="lead">小ロットから、大ロットまで</p>
-          <ul class="checks">
-            <li>100個から注文できる商品もあります（種類は限られます）。</li>
-            <li>2万個なら、1個150〜300円程度で作れます（中国の工場で製作）。</li>
-          </ul>
-          <p>仕入れ値が安い商品なら、1回あたりの手残りが増えます。400円で売る場合の例です。</p>
-          <div class="compare-pill">
-            <span class="ours">1個200円のオリジナル商品<br>1回の手残り <b>約153円</b></span>
-            <span>版権品（仕入れ75%）<br>1回の手残り <b>約80円</b></span>
-          </div>
-        </div>
+        <ul class="dots">
+          <li>100個から作れる商品もあります（商品は限られます）。</li>
+          <li>2万個などの大きなロットでの制作にも対応します。</li>
+          <li>オリジナル制作は、数量と仕様に合わせて別途お見積りします。</li>
+        </ul>
         <div class="gallery">
-          <figure><img src="img/charm-800.jpg" width="800" height="533" loading="lazy" alt="ぷっくりした立体チャームの商品イメージ"><figcaption>ぷっくり立体チャーム</figcaption></figure>
-          <figure><img src="img/acrylic-800.jpg" width="800" height="533" loading="lazy" alt="透明なアクリルスタンドの商品イメージ"><figcaption>アクリルスタンド</figcaption></figure>
-          <figure><img src="img/animal-1024.jpg" width="1024" height="683" loading="lazy" alt="動物モチーフのキーホルダーとカプセルの商品イメージ"><figcaption>動物モチーフのキーホルダー</figcaption></figure>
-          <figure><img src="img/unboxing-1024.jpg" width="1024" height="683" loading="lazy" alt="カプセルを開けて中の商品を取り出すイメージ"><figcaption>開ける瞬間も楽しい</figcaption></figure>
+          <figure><img src="img/charm-800.jpg" width="800" height="533" loading="lazy" alt="ぷっくりした立体チャームの例"><figcaption>ぷっくり立体チャーム</figcaption></figure>
+          <figure><img src="img/acrylic-800.jpg" width="800" height="533" loading="lazy" alt="透明なアクリルスタンドの例"><figcaption>アクリルスタンド</figcaption></figure>
+          <figure><img src="img/animal-1024.jpg" width="1024" height="683" loading="lazy" alt="動物モチーフのキーホルダーの例"><figcaption>動物モチーフのキーホルダー</figcaption></figure>
+          <figure><img src="img/unboxing-1024.jpg" width="1024" height="683" loading="lazy" alt="カプセルを開けて商品を取り出す様子"><figcaption>開ける瞬間も楽しい</figcaption></figure>
         </div>
       </div>
       <p class="note" style="margin-top: 10px">デザインは一例です。お店や地域に合わせて作れます。</p>
@@ -504,77 +638,111 @@
     </div>
   </section>
 
-  <section class="tint" id="flow">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="kicker"><b>6</b>始めるまでの流れ</span>
-        <h2><span class="nb">LINEで相談して、</span><span class="nb">すぐスタート</span></h2>
-      </div>
-      <ol class="flow">
-        <li><b>LINEで相談</b><span>置きたい場所の広さや業種をお知らせください。</span></li>
-        <li><b><span class="nb">場所と</span><span class="nb">人通りを確認</span></b><span>置き場所と、前を通る人の数を一緒に確かめます。</span></li>
-        <li><b><span class="nb">デザイン・</span><span class="nb">商品のご提案</span></b><span>台紙・POPと、お店に合う商品をご提案します。</span></li>
-        <li><b><span class="nb">設置して</span><span class="nb">スタート</span></b><span>筐体は置くだけ。組み立ては不要です。</span></li>
-        <li><b><span class="nb">補充・保守も</span><span class="nb">サポート</span></b><span>入れ替えや困ったときも、担当が対応します。</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="faq">
+  <section class="sec-pink" id="faq">
     <div class="wrap">
       <div class="sec-head">
         <span class="kicker">よくある質問</span>
         <h2>よくある質問</h2>
       </div>
       <div class="faq">
-        <details><summary>どんなお店に向いていますか？</summary><p>雑貨店、カフェ、飲食店、美容室、クリニックの待合、道の駅、ホテルのロビーなど、空いている壁ぎわがあるお店・施設に置けます。人通りが多いほど売上は上がります。</p></details>
+        <details><summary>15万円（税別）には何が含まれますか？</summary><p>上下2台の筐体1ボックス、初回商品2種類・計80個、ディスプレイデザイン、導入サポート、基本送料です。標準商品・基本配送地域のプランで、遠隔地・特殊設置・オリジナル制作・修理部品は別途お見積りです。</p></details>
+        <details><summary>商品を追加するときの費用は？</summary><p>購入ごとに、基本管理費1万円（税別）と商品代、送料がかかります。基本管理費は月額ではありません。少量ずつの追加では費用が売上を上回ることがあるので、売価と追加する数は担当者と相談して決めます。</p></details>
+        <details><summary>利益は出ますか？</summary><p>売上は置く場所の人通りで大きく変わります。人通りが少ない場所や少量の追加では、赤字になることがあります。上の収支シミュレーションで、費用を含めた目安を確かめられます。売上や利益を保証するものではありません。</p></details>
+        <details><summary>どれくらいの広さが必要ですか？</summary><p>目安は幅60cm×奥行100cm（前に立つスペース込み）です。通路は別に確保してください。メーカーが保証する最低寸法ではないので、置く場所は担当者と確認します。</p></details>
         <details><summary>100円玉以外でも動きますか？</summary><p>100〜400円は100円玉で設定します。500円玉用の部品もあります（別売り）。</p></details>
-        <details><summary>置く商品は自分で選ぶのですか？</summary><p>担当が、お店の客層に合う商品を選んでご提案します。オリジナル商品の制作もご相談いただけます。</p></details>
-        <details><summary>サポートにお金はかかりますか？</summary><p>ガチャ商品をご購入いただくと、ディスプレイのデザイン、商品の選定、導入、アフターのサポートは無料です。</p></details>
       </div>
     </div>
   </section>
 
-  <section class="cta" id="contact">
+  <section class="cta">
     <div class="wrap">
-      <div class="cta-face"><img src="img/line-icon.png" width="480" height="480" alt="LINEサポート担当のアイコン"></div>
-      <div class="cta-copy">
-        <p class="bubble">まずはLINEで、お気軽にどうぞ！</p>
-        <h2><span class="g">LINE</span>で相談して、<span class="nb">すぐスタート</span></h2>
-        <p>置きたい場所の広さや業種を、LINEでお知らせください。担当がご提案します。</p>
-        <a class="btn btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで友だち追加して相談する</a>
+      <div class="cta-band">
+        <div class="cta-copy">
+          <h2><span class="nb">まずはLINEで、</span><span class="nb">気軽にスタート相談！</span></h2>
+          <p class="chip">置きたい場所の写真を送るだけ。</p>
+        </div>
+        <div class="cta-face"><img src="img/line-icon.png" width="480" height="480" alt="LINEサポート担当者のアイコン"><span class="say">私が担当します！</span><span class="lbadge" aria-hidden="true">LINE</span></div>
+        <div class="cta-qr"><img src="img/line-qr.png" width="465" height="465" alt="LINEで友だち追加するためのQRコード">LINEで友だち追加</div>
       </div>
-      <div class="qr"><img src="img/line-qr.png" width="465" height="465" alt="LINEで友だち追加するためのQRコード"><span>LINEで友だち追加</span></div>
+      <p style="text-align: center; margin-top: 18px"><a class="btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><span class="lg" aria-hidden="true">LINE</span>LINEでスタート相談<span class="arrow" aria-hidden="true">›</span></a></p>
     </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <div>
-      <h3>ご注意</h3>
-      <ul>
-        <li>売上・手残りは目安で、保証するものではありません。</li>
-        <li>価格は税別です。送料は別途かかります。</li>
-        <li>「ガシャポン」は株式会社バンダイの登録商標です。</li>
-      </ul>
-    </div>
-    <div>
-      <h3>出典</h3>
-      <ul>
-        <li>日本カプセルトイ協会 <a href="https://www.japan-cta.org/wp/wp-content/uploads/2026/02/JACTA20260219.pdf" target="_blank" rel="noopener">市場動向調査（2026年2月19日）</a></li>
-        <li>株式会社ハピネット <a href="https://prtimes.jp/main/html/rd/p/000002073.000031422.html" target="_blank" rel="noopener">カプセルトイ調査（2025年3月12日）</a></li>
-        <li>株式会社SOARA <a href="https://soara-mu.jp/blog/gacha-crane-average-revenue" target="_blank" rel="noopener">1台あたりの月間売上（2026年4月16日）</a></li>
-        <li>あミューズ（カプセルトイ卸） <a href="https://www.a-muzu.com/category/CAPSULE_TOY_003_3/" target="_blank" rel="noopener">卸価格（2026年10月1日閲覧）</a></li>
-      </ul>
-    </div>
     <div class="brandline">
-      <span>運営：<a href="https://bantex.jp/" target="_blank" rel="noopener">BANTEX</a></span>
-      <span>ガチャのご相談：<a href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener">LINE</a></span>
+      <span class="logo">BANTEX</span><span class="sep" aria-hidden="true"></span><span>ガチャで、もっと楽しい空間を。</span>
+      <span class="smile">Good Items Good Smile <b aria-hidden="true">♥</b></span>
     </div>
+    <div class="cols">
+      <div>
+        <h3>ご注意</h3>
+        <ul>
+          <li>価格は税別です（15万円は税込165,000円）。</li>
+          <li>売上や利益を保証するものではありません。</li>
+          <li>「ガシャポン」は株式会社バンダイの登録商標です。</li>
+        </ul>
+      </div>
+      <div>
+        <h3>出典</h3>
+        <ul>
+          <li>日本カプセルトイ協会 <a href="https://www.japan-cta.org/wp/wp-content/uploads/2026/02/JACTA20260219.pdf" target="_blank" rel="noopener">市場動向調査（2026年2月19日）</a></li>
+          <li>株式会社ハピネット <a href="https://prtimes.jp/main/html/rd/p/000002073.000031422.html" target="_blank" rel="noopener">カプセルトイ調査（2025年3月12日）</a></li>
+          <li>株式会社SOARA <a href="https://soara-mu.jp/blog/gacha-crane-average-revenue" target="_blank" rel="noopener">1台あたりの月間売上（2026年4月16日）</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>運営：<a href="https://bantex.jp/" target="_blank" rel="noopener">BANTEX</a>　ガチャのご相談：<a href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener">LINE</a></p>
   </div>
 </footer>
 
-<div class="line-bar"><a class="btn btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで相談する</a></div>
+<div class="line-bar"><a class="btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><span class="lg" aria-hidden="true">LINE</span>LINEで相談する<span class="arrow" aria-hidden="true">›</span></a></div>
+
+<script>
+  (function () {
+    var form = document.getElementById('sim-form');
+    var $ = function (id) { return document.getElementById(id); };
+    var yen = function (n) { return Math.round(n).toLocaleString('ja-JP') + '円'; };
+    var FEE = 10000;
+    function update() {
+      var price = Number($('sim-price').value);
+      var qty = Math.max(1, Math.floor(Number($('qty').value) || 1));
+      var goods = Math.max(0, Number($('goods').value) || 0);
+      var ship = Math.max(0, Number($('ship').value) || 0);
+      var salesIn = price * qty;
+      var sales = salesIn / 1.1;
+      var cost = goods + FEE + ship;
+      var total = sales - cost;
+      $('r-sales-in').textContent = yen(salesIn);
+      $('r-sales').textContent = yen(sales);
+      $('r-cost').textContent = yen(cost);
+      var t = $('r-total');
+      var r = Math.round(total);
+      t.textContent = (r > 0 ? '+' : r < 0 ? '−' : '±') + Math.abs(r).toLocaleString('ja-JP') + '円';
+      t.className = 'v ' + (r < 0 ? 'neg' : 'pos');
+      var perItem = goods / qty;
+      var margin = price / 1.1 - perItem;
+      var msg;
+      if (r >= 0) msg = 'この条件では、すべて売れた場合に黒字です。ロスや家賃・人件費は含みません。';
+      else if (margin <= 0) msg = 'この条件では、すべて売れても赤字です。1個あたりの商品代が売価（税抜）以上です。';
+      else msg = 'この条件では、すべて売れても赤字です。1個あたりの商品代が同じなら、黒字には1回に約' + Math.ceil((FEE + ship) / margin).toLocaleString('ja-JP') + '個以上が必要です。';
+      $('r-be').textContent = msg;
+    }
+    form.addEventListener('input', function () {
+      form.querySelectorAll('.presets button').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+      update();
+    });
+    form.addEventListener('submit', function (e) { e.preventDefault(); });
+    form.querySelectorAll('.presets button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        $('sim-price').value = b.dataset.p; $('qty').value = b.dataset.q; $('goods').value = b.dataset.g; $('ship').value = 1000;
+        update();
+        form.querySelectorAll('.presets button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      });
+    });
+    update();
+  })();
+</script>
 </body>
 </html>
