@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>空きスペースをガチャで｜1ボックスから始めるガチャ導入サポート｜BANTEX</title>
+<meta name="description" content="小さなお店・施設の空きスペースに、ガチャを1ボックス（上下2台）から。ディスプレイのデザイン、商品選び、オリジナル制作、保守まで担当がサポート。LINEからすぐ相談できます。">
+<link rel="canonical" href="https://gacha.bantex.jp/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BANTEX ガチャ導入サポート">
+<meta property="og:title" content="空きスペースを、ガチャで利用しませんか？｜BANTEX">
+<meta property="og:description" content="面倒なことは、担当が全部サポート。1ボックス（上下2台）から小さく始められます。">
+<meta property="og:url" content="https://gacha.bantex.jp/">
+<meta property="og:image" content="https://gacha.bantex.jp/img/hero-1536.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fffaf0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f7c84b' stroke='%231f3133' stroke-width='4'/%3E%3Cpath d='M4 32h56' stroke='%231f3133' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23fff' stroke='%231f3133' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
+<style>
+  /* チラシと同じ配色。丸いカプセルを、数字の札・見出しの印・ボタンの形に使う */
+  :root {
+    --paper: #fffaf0;
+    --card: #ffffff;
+    --ink: #1f3133;
+    --ink-soft: #3f5456;
+    --muted: #5d6e6f;
+    --line: #e4e6dd;
+    --yellow: #f7c84b;
+    --yellow-soft: #fff1bf;
+    --mint: #bde3d2;
+    --mint-soft: #eaf6f0;
+    --coral: #ee826f;
+    --coral-deep: #d9604b;
+    --coral-soft: #fde8e2;
+    --line-green: #06c755;
+    --line-green-deep: #05a947;
+    --good: #1f7d59;
+    --font-display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+    --content: 1080px;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.85; padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+  @media (min-width: 900px) { body { padding-bottom: 0; } }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--coral-deep); outline-offset: 3px; border-radius: 10px; }
+  .wrap { max-width: var(--content); margin-inline: auto; padding-inline: 20px; }
+  @media (max-width: 560px) { .wrap { padding-inline: 16px; } }
+  h1, h2, h3 { font-family: var(--font-display); line-height: 1.35; margin: 0; text-wrap: balance; }
+  h2 { font-size: clamp(1.55rem, 1.1rem + 2vw, 2.3rem); font-weight: 900; }
+  h3 { font-size: 1.15rem; font-weight: 700; }
+  p { margin: 0; }
+  .nb { display: inline-block; }
+  .num { font-family: var(--font-display); font-weight: 900; font-variant-numeric: tabular-nums; }
+  section { padding-block: clamp(52px, 8vw, 92px); scroll-margin-top: 64px; }
+  .tint { background: var(--mint-soft); }
+  .sec-head { display: grid; gap: 10px; margin-bottom: 28px; max-width: 46rem; }
+  .sec-head p { color: var(--ink-soft); }
+  .kicker { display: inline-flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.1em; color: var(--ink-soft); }
+  .kicker b { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--yellow); color: var(--ink); font-family: var(--font-display); font-size: 0.95rem; border: 2px solid var(--ink); letter-spacing: 0; }
+  .note { font-size: 0.8rem; color: var(--muted); }
+  .note a { text-underline-offset: 3px; }
+
+  /* buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 10px 26px; border-radius: 999px; font-weight: 800; text-decoration: none; border: 2px solid var(--ink); background: var(--card); color: var(--ink); font-size: 1rem; transition: transform 0.15s ease; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-line { background: var(--line-green); border-color: var(--line-green-deep); color: #fff; font-size: 1.05rem; }
+  .btn-line:hover { background: var(--line-green-deep); }
+  .btn-line svg { width: 26px; height: 26px; flex: none; }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+
+  /* header */
+  .site-head { position: sticky; top: 0; z-index: 20; background: rgba(255, 250, 240, 0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 60px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 900; letter-spacing: 0.06em; }
+  .brand svg { width: 30px; height: 30px; flex: none; }
+  .brand small { font-weight: 700; letter-spacing: 0.02em; color: var(--ink-soft); font-size: 0.78rem; }
+  .head-nav { display: flex; gap: 4px 16px; font-size: 0.88rem; flex-wrap: wrap; }
+  .head-nav a { text-decoration: none; color: var(--ink-soft); }
+  .head-nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+  .head-line { min-height: 42px; padding: 6px 18px; font-size: 0.92rem; }
+  @media (max-width: 899px) { .head-nav, .head-line { display: none; } }
+
+  /* hero */
+  .hero { padding-block: clamp(28px, 5vw, 64px) clamp(44px, 7vw, 80px); }
+  .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 52px); align-items: center; }
+  .hero-copy { display: grid; gap: 18px; min-width: 0; }
+  .eyebrow { justify-self: start; padding: 4px 16px; border-radius: 999px; background: var(--mint); font-weight: 700; font-size: 0.9rem; }
+  .hero h1 { font-size: clamp(1.9rem, 0.9rem + 2.6vw, 2.6rem); font-weight: 900; line-height: 1.25; }
+  .hero h1 .accent { color: var(--coral-deep); }
+  .ribbon { justify-self: start; background: var(--coral-deep); color: #fff; font-family: var(--font-display); font-weight: 900; font-size: clamp(1.1rem, 0.9rem + 1vw, 1.45rem); padding: 8px 22px; border-radius: 14px; box-shadow: 0 6px 0 rgba(31, 49, 51, 0.12); }
+  .hero-lead { color: var(--ink-soft); max-width: 34rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+  .chips li { background: var(--card); border: 1.5px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-size: 0.88rem; font-weight: 700; }
+  .chips li b { color: var(--coral-deep); }
+  .photo { border-radius: 26px; overflow: hidden; border: 2px solid var(--ink); background: var(--card); box-shadow: 0 18px 44px rgba(31, 49, 51, 0.12); }
+  .photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  figure { margin: 0; }
+  figcaption { font-size: 0.75rem; color: var(--muted); margin-top: 8px; }
+  @media (max-width: 899px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); } }
+
+  /* support */
+  .support-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; list-style: none; margin: 0; padding: 0; }
+  .support-grid li { background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 20px 18px 22px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+  .support-grid .ico { width: 54px; height: 54px; border-radius: 50%; background: var(--yellow-soft); display: grid; place-items: center; border: 2px solid var(--ink); }
+  .support-grid .ico svg { width: 28px; height: 28px; }
+  .support-grid p { font-size: 0.92rem; color: var(--ink-soft); }
+  .free { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; background: var(--card); border-radius: 24px; border: 2px dashed var(--coral-deep); padding: 16px 20px; }
+  .free strong { font-family: var(--font-display); font-size: clamp(1.05rem, 0.95rem + 0.6vw, 1.3rem); }
+  .free strong em { font-style: normal; color: var(--coral-deep); }
+  .tantou { display: flex; align-items: center; gap: 14px; margin-left: auto; }
+  .tantou img { width: 76px; height: 76px; border-radius: 50%; border: 3px solid var(--card); box-shadow: 0 0 0 2px var(--ink); object-fit: cover; }
+  .bubble { position: relative; background: var(--mint); border-radius: 18px; padding: 10px 16px; font-weight: 700; font-size: 0.92rem; max-width: 17em; }
+  .bubble::before { content: ""; position: absolute; left: -8px; top: 50%; translate: 0 -50%; border: 8px solid transparent; border-right-color: var(--mint); border-left: 0; }
+  @media (max-width: 899px) { .support-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tantou { margin-left: 0; } }
+  @media (max-width: 420px) { .support-grid { grid-template-columns: minmax(0, 1fr); } }
+
+  /* market */
+  .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 20px 20px 18px; display: grid; gap: 2px; align-content: start; min-width: 0; }
+  .stat .num { font-size: clamp(2rem, 1.4rem + 2vw, 2.7rem); color: var(--coral-deep); line-height: 1.2; }
+  .stat .label { font-weight: 700; }
+  .stat .sub { font-size: 0.85rem; color: var(--muted); }
+  .facts { margin-top: 14px; display: grid; gap: 8px; list-style: none; padding: 0; }
+  .facts li { background: var(--card); border-radius: 16px; padding: 10px 16px; border-left: 6px solid var(--yellow); font-size: 0.95rem; }
+  .news { margin-top: 26px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .news a { display: grid; gap: 6px; background: var(--card); border: 2px solid var(--ink); border-radius: 20px; padding: 16px 18px; text-decoration: none; min-width: 0; }
+  .news .meta { font-size: 0.8rem; color: var(--muted); }
+  .news .head { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; line-height: 1.5; }
+  .news .more { font-size: 0.82rem; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 760px) { .stats, .news { grid-template-columns: minmax(0, 1fr); } }
+
+  /* space */
+  .space { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 26px; align-items: start; }
+  .diagram { background: var(--card); border: 2px solid var(--ink); border-radius: 24px; padding: 18px; }
+  .diagram svg { width: 100%; height: auto; display: block; }
+  .space-main { display: grid; gap: 16px; min-width: 0; }
+  .big-size { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.8rem, 1.2rem + 2.4vw, 2.6rem); line-height: 1.2; }
+  .big-size small { display: block; font-size: 0.95rem; font-weight: 700; color: var(--ink-soft); margin-top: 6px; }
+  .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .checks li { position: relative; padding-left: 28px; }
+  .checks li::before { content: ""; position: absolute; left: 3px; top: 0.55em; width: 14px; height: 14px; border-radius: 50%; background: var(--coral); border: 2px solid var(--ink); }
+  .spec { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 6px 18px; }
+  .spec dl { margin: 0; display: grid; }
+  .spec dl div { display: grid; grid-template-columns: 7.5em minmax(0, 1fr); gap: 12px; padding-block: 9px; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+  .spec dl div:last-child { border-bottom: 0; }
+  .spec dt { color: var(--muted); font-weight: 700; }
+  .spec dd { margin: 0; }
+  @media (max-width: 860px) { .space { grid-template-columns: minmax(0, 1fr); } }
+
+  /* cost */
+  .equation { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1.1fr); gap: 12px; align-items: stretch; }
+  .eq-box { background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 18px 16px; display: grid; gap: 4px; align-content: center; text-align: center; min-width: 0; }
+  .eq-box .what { font-weight: 700; font-size: 0.95rem; }
+  .eq-box .price { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); color: var(--coral-deep); line-height: 1.2; }
+  .eq-box .price.range { font-size: clamp(1.3rem, 0.9rem + 1.2vw, 1.8rem); white-space: nowrap; }
+  .eq-box.total { background: var(--yellow); }
+  .eq-box.total .price { color: var(--ink); font-size: clamp(2rem, 1.4rem + 2.2vw, 2.9rem); }
+  .op { align-self: center; font-family: var(--font-display); font-weight: 900; font-size: 2rem; }
+  @media (max-width: 760px) { .equation { grid-template-columns: minmax(0, 1fr); } .op { justify-self: center; line-height: 1; } }
+
+  /* sales */
+  .sales { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+  .tbl { background: var(--card); border-radius: 22px; border: 2px solid var(--ink); overflow: hidden; }
+  .tbl .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  thead th { background: var(--ink); color: var(--paper); font-size: 0.85rem; }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+  tbody th { font-weight: 700; }
+  td.keep { color: var(--good); font-weight: 700; }
+  .traffic { display: grid; gap: 12px; }
+  .tcard { border-radius: 20px; padding: 16px 18px; border: 2px solid var(--ink); display: grid; gap: 2px; }
+  .tcard.hi { background: var(--yellow); }
+  .tcard.lo { background: var(--coral-soft); }
+  .tcard .who { font-weight: 700; font-size: 0.92rem; }
+  .tcard .what { font-family: var(--font-display); font-weight: 900; font-size: 1.3rem; }
+  .formula { margin-top: 18px; background: var(--ink); color: var(--paper); border-radius: 18px; padding: 14px 18px; font-family: var(--font-display); font-weight: 700; text-align: center; }
+  .formula b { color: var(--yellow); }
+  .hint { margin-top: 14px; background: var(--card); border-radius: 18px; padding: 14px 18px; border-left: 6px solid var(--mint); font-size: 0.95rem; }
+  @media (max-width: 860px) { .sales { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 560px) {
+    .tbl table, .tbl tbody { display: block; }
+    .tbl thead { display: none; }
+    .tbl tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--line); padding: 10px 14px; gap: 2px 12px; }
+    .tbl tbody tr:last-child { border-bottom: 0; }
+    .tbl th, .tbl td { border: 0; padding: 0; white-space: normal; }
+    .tbl tbody th { grid-column: 1 / -1; font-size: 1rem; }
+    .tbl td::before { content: attr(data-label); display: block; font-size: 0.75rem; color: var(--muted); font-weight: 700; }
+  }
+
+  /* original */
+  .orig { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  .orig-points { display: grid; gap: 14px; }
+  .orig-points .lead { font-family: var(--font-display); font-weight: 900; font-size: 1.3rem; }
+  .compare-pill { display: flex; flex-wrap: wrap; gap: 10px; }
+  .compare-pill span { border-radius: 16px; padding: 10px 14px; font-size: 0.9rem; background: var(--card); border: 1.5px solid var(--line); }
+  .compare-pill span b { font-family: var(--font-display); font-size: 1.35rem; }
+  .compare-pill .ours { border-color: var(--ink); background: var(--yellow-soft); }
+  .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .gallery figure { background: var(--card); border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
+  .gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .gallery figcaption { margin: 0; padding: 6px 10px 8px; font-size: 0.82rem; color: var(--ink-soft); font-weight: 700; }
+  .cases { margin-top: 22px; background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 16px 20px; display: grid; gap: 10px; }
+  .cases ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+  .cases a { text-underline-offset: 3px; }
+  @media (max-width: 860px) { .orig { grid-template-columns: minmax(0, 1fr); } }
+
+  /* flow */
+  .flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; counter-reset: step; }
+  .flow li { counter-increment: step; background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 18px 16px; display: grid; gap: 6px; align-content: start; min-width: 0; position: relative; }
+  .flow li::before { content: counter(step); width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--yellow); border: 2px solid var(--ink); font-family: var(--font-display); font-weight: 900; }
+  .flow li:first-child::before { background: var(--line-green); color: #fff; border-color: var(--line-green-deep); }
+  .flow b { font-family: var(--font-display); font-size: 1.05rem; }
+  .flow span { font-size: 0.88rem; color: var(--ink-soft); }
+  @media (max-width: 899px) { .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 420px) { .flow { grid-template-columns: minmax(0, 1fr); } }
+
+  /* faq */
+  .faq { display: grid; gap: 10px; max-width: 52rem; }
+  .faq details { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 14px 18px; }
+  .faq summary { cursor: pointer; font-weight: 800; list-style: none; display: flex; gap: 10px; align-items: baseline; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::before { content: "Q"; font-family: var(--font-display); font-weight: 900; color: var(--coral-deep); }
+  .faq details p { margin-top: 8px; color: var(--ink-soft); font-size: 0.95rem; }
+
+  /* cta */
+  .cta { background: var(--mint); }
+  .cta .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 26px; align-items: center; }
+  .cta-face img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--card); box-shadow: 0 0 0 2px var(--ink); object-fit: cover; }
+  .cta-copy { display: grid; gap: 12px; min-width: 0; }
+  .cta-copy .bubble { background: var(--card); max-width: none; justify-self: start; }
+  .cta-copy .bubble::before { border-right-color: var(--card); }
+  .cta-copy h2 { font-size: clamp(1.7rem, 1.2rem + 2vw, 2.5rem); }
+  .cta-copy h2 .g { color: var(--line-green-deep); }
+  .qr { background: var(--card); border: 2px solid var(--ink); border-radius: 22px; padding: 14px; display: grid; gap: 6px; justify-items: center; }
+  .qr img { width: 150px; height: 150px; image-rendering: pixelated; }
+  .qr span { font-size: 0.8rem; font-weight: 800; color: var(--line-green-deep); }
+  @media (max-width: 760px) { .cta .wrap { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; } .cta-copy { justify-items: center; } .cta-copy .bubble::before { display: none; } .qr { display: none; } }
+
+  /* footer */
+  .foot { padding-block: 40px 48px; font-size: 0.82rem; color: var(--muted); }
+  .foot .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; }
+  .foot h3 { font-size: 0.95rem; color: var(--ink); margin-bottom: 6px; }
+  .foot ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+  .foot a { text-underline-offset: 3px; word-break: break-all; }
+  .foot .brandline { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+  @media (max-width: 760px) { .foot .wrap { grid-template-columns: minmax(0, 1fr); } }
+
+  /* mobile line bar */
+  .line-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(255, 250, 240, 0.96); border-top: 1px solid var(--line); }
+  .line-bar .btn { width: 100%; }
+  @media (min-width: 900px) { .line-bar { display: none; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position: absolute" aria-hidden="true">
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6c1.4-1.6 2-3.2 2-4.9C22 6.6 17.5 3 12 3zm-4 10H6.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0V12h1a.5.5 0 0 1 0 1zm2-.5a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 1 0zm4.5 0a.5.5 0 0 1-.9.3L12 10.1v2.4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .9-.3L13.5 11V8.5a.5.5 0 0 1 1 0zm3-2.5a.5.5 0 0 1 0 1H16v1h1.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H16v1z"/></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="BANTEX ガチャ導入サポート トップへ">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#f7c84b" stroke="#1f3133" stroke-width="3"/><path d="M4 32h56" stroke="#1f3133" stroke-width="3"/><circle cx="32" cy="32" r="7" fill="#fff" stroke="#1f3133" stroke-width="3"/></svg>
+      <span>BANTEX <small>ガチャ導入サポート</small></span>
+    </a>
+    <nav class="head-nav" aria-label="ページ内の移動">
+      <a href="#support">サポート</a>
+      <a href="#space">スペース</a>
+      <a href="#cost">費用</a>
+      <a href="#sales">売上</a>
+      <a href="#original">オリジナル</a>
+      <a href="#flow">流れ</a>
+    </nav>
+    <a class="btn btn-line head-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで相談</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">小さなお店・施設のオーナーさまへ</span>
+        <h1><span class="nb">空きスペースを、</span><br><span class="nb"><span class="accent">ガチャ</span>で</span><span class="nb">利用しませんか？</span></h1>
+        <p class="ribbon">面倒なことは、担当が全部サポート。</p>
+        <p class="hero-lead">1ボックス（上下2台）から、小さく始められます。ディスプレイのデザインも、商品選びも、オリジナル制作も、保守も。LINEで相談すれば、すぐに始められます。</p>
+        <div class="hero-actions">
+          <a class="btn btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで相談する</a>
+          <a class="btn" href="#support">くわしく見る</a>
+        </div>
+        <ul class="chips">
+          <li>スペース <b>幅60cm×奥行1m</b>から</li>
+          <li>費用 <b>約8万円</b>から（税別）</li>
+          <li>サポートは<b>無料</b>（ガチャ商品のご購入で）</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="photo"><img src="img/hero-1536.jpg" srcset="img/hero-800.jpg 800w, img/hero-1536.jpg 1536w" sizes="(max-width: 899px) 100vw, 520px" width="1536" height="1024" alt="雑貨店のレジ横の壁ぎわに、上下2段のガチャ筐体が2ボックス並び、親子が商品を選んでいる様子のイメージ"></div>
+        <figcaption>画像はGPT Image 2で作成したイメージです。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="tint" id="support">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">担当サポート</span>
+        <h2><span class="nb">面倒なことは、</span><span class="nb">担当が全部サポート</span></h2>
+        <p>ガチャを置くときに手間がかかるところは、担当がまとめて引き受けます。</p>
+      </div>
+      <ul class="support-grid">
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg></span><h3>ディスプレイのデザイン</h3><p>台紙やPOPを作ります。お店の雰囲気に合わせて、目に留まる売場にします。</p></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M6 9h12M9 21h6M12 15v6"/></svg></span><h3>ガチャ商品の選定</h3><p>お店の客層に合う商品を、担当が選んでご提案します。</p></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></span><h3>オリジナル商品の制作</h3><p>お店だけ・地域だけの商品を作れます。100個から作れる商品もあります。</p></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#1f3133" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span><h3>保守・アフター</h3><p>補充のやり方、商品の入れ替え、困ったときの相談まで、担当が対応します。</p></li>
+      </ul>
+      <div class="free">
+        <strong>ガチャ商品のご購入で、サポートは<em>無料</em>です。</strong>
+        <div class="tantou">
+          <img src="img/line-icon.png" width="480" height="480" alt="LINEサポート担当のアイコン">
+          <p class="bubble">デザインも商品選びも、おまかせください！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="market">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>1</b>ガチャの盛り上がり</span>
+        <h2><span class="nb">ガチャは、</span><span class="nb">いま伸びています</span></h2>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="num">約1,960億円</span><span class="label">2025年の国内市場</span><span class="sub">前年比39.0%増（メーカー出荷ベース）</span></div>
+        <div class="stat"><span class="num">917店</span><span class="label">カプセルトイ専門店</span><span class="sub">2026年1月31日時点。1年で200店以上増加</span></div>
+        <div class="stat"><span class="num">35.0%</span><span class="label">大人になってから買ったことがある人</span><span class="sub">20代女性は52.5%、30代女性は51.2%</span></div>
+      </div>
+      <ul class="facts">
+        <li>1年に約5.5億個、1人あたり年4〜5個のガチャが買われています（日本カプセルトイ協会の試算）。</li>
+        <li>買っているのは20〜30代の女性が中心です。人気の観光地の近くでは、半数以上が訪日客です。</li>
+      </ul>
+      <div class="news">
+        <a href="https://prtimes.jp/main/html/rd/p/000000483.000159118.html" target="_blank" rel="noopener"><span class="meta">株式会社バンダイナムコエクスペリエンス｜2026年9月7日</span><span class="head">バンダイ公式のガシャポン専門店が、国内300店舗に</span><span class="more">発表を読む</span></a>
+        <a href="https://www.dailyshincho.jp/article/2026/07021530/" target="_blank" rel="noopener"><span class="meta">デイリー新潮｜2026年7月2日</span><span class="head">「空きテナントは『カプセルトイ』ばかり」</span><span class="more">記事を読む</span></a>
+      </div>
+      <p class="note" style="margin-top: 14px">出典：一般社団法人日本カプセルトイ協会「カプセルトイ市場動向調査」（2026年2月19日）、株式会社ハピネット調査（2025年3月12日、20歳以上4,405名）。</p>
+    </div>
+  </section>
+
+  <section class="tint" id="space">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>2</b>必要なスペース</span>
+        <h2><span class="nb">必要なのは、</span><span class="nb">半畳より小さいスペース</span></h2>
+        <p>筐体の大きさは取扱説明書の寸法です。前に人が立って選べる場所を足して、必要なスペースを出しました。</p>
+      </div>
+      <div class="space">
+        <div class="diagram">
+          <svg viewBox="0 0 420 590" role="img" aria-label="真上から見た図。壁ぎわに幅30cm・奥行40cmの筐体を置き、その前に奥行60cmの立つ場所をとると、全体で幅60cm・奥行1m。通路に面する場合は後ろに60cmを足して奥行1.6m。">
+            <rect x="0" y="0" width="420" height="590" fill="#ffffff"/>
+            <rect x="40" y="20" width="250" height="10" fill="#1f3133"/>
+            <text x="300" y="30" font-size="14" font-weight="700" fill="#1f3133">壁</text>
+            <rect x="88" y="30" width="96" height="128" fill="#bde3d2" stroke="#1f3133" stroke-width="2.5" rx="6"/>
+            <text x="136" y="88" font-size="16" font-weight="700" fill="#1f3133" text-anchor="middle">筐体</text>
+            <text x="136" y="108" font-size="14" fill="#1f3133" text-anchor="middle">30×40cm</text>
+            <rect x="40" y="158" width="192" height="192" fill="#fff1bf" stroke="#1f3133" stroke-width="2" stroke-dasharray="7 5" rx="6"/>
+            <rect x="94" y="248" width="84" height="32" rx="16" fill="#ee826f"/>
+            <circle cx="136" cy="256" r="15" fill="#fffaf0" stroke="#1f3133" stroke-width="3"/>
+            <path d="M136 238 v-20 M129 225 l7 -7 7 7" stroke="#1f3133" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="136" y="320" font-size="15" font-weight="700" fill="#1f3133" text-anchor="middle">前に立つ場所 60cm</text>
+            <rect x="40" y="350" width="192" height="192" fill="#eaf6f0" stroke="#5d6e6f" stroke-width="1.5" stroke-dasharray="3 5" rx="6"/>
+            <text x="136" y="440" font-size="14" fill="#3f5456" text-anchor="middle">通路に面するなら</text>
+            <text x="136" y="460" font-size="14" fill="#3f5456" text-anchor="middle">後ろを人が通る 60cm</text>
+            <path d="M40 558 h192" stroke="#d9604b" stroke-width="2.5"/>
+            <path d="M40 551 v14 M232 551 v14" stroke="#d9604b" stroke-width="2.5"/>
+            <text x="136" y="584" font-size="16" font-weight="900" fill="#d9604b" text-anchor="middle">幅60cm</text>
+            <path d="M262 30 v320" stroke="#d9604b" stroke-width="2.5"/>
+            <path d="M255 30 h14 M255 350 h14" stroke="#d9604b" stroke-width="2.5"/>
+            <text x="276" y="196" font-size="16" font-weight="900" fill="#d9604b">奥行1m</text>
+            <path d="M352 30 v512" stroke="#5d6e6f" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <path d="M345 30 h14 M345 542 h14" stroke="#5d6e6f" stroke-width="1.5"/>
+            <text x="362" y="452" font-size="13" font-weight="700" fill="#3f5456">通路側</text>
+            <text x="362" y="470" font-size="13" font-weight="700" fill="#3f5456">1.6m</text>
+          </svg>
+          <p class="note" style="text-align: center">図は縮尺どおりです。幅60cmは筐体2ボックス分の幅です。</p>
+        </div>
+        <div class="space-main">
+          <p class="big-size">幅60cm×奥行1mから<small>約0.6㎡。半畳より小さいスペースです。</small></p>
+          <ul class="checks">
+            <li>2ボックス（4台）を横に並べても、幅は60cmのままです。</li>
+            <li>補充と集金は前面だけで行えるので、壁ぎわに置けます。</li>
+            <li>通路に面して置くなら、後ろを人が通れるよう奥行1.6mにします。</li>
+            <li>倒れないよう、ひもやチェーンで壁などに固定します。</li>
+          </ul>
+          <div class="spec">
+            <dl>
+              <div><dt>形</dt><dd>上下2台一体型（1ボックスで2種類）</dd></div>
+              <div><dt>大きさ</dt><dd>幅300×奥行400×高さ1,260mm</dd></div>
+              <div><dt>重さ</dt><dd>15kg</dd></div>
+              <div><dt>カプセル</dt><dd>直径45〜75mm</dd></div>
+              <div><dt>入る数</dt><dd>45〜50mmは100〜150個、55〜65mmは60〜80個、75mmは50個</dd></div>
+              <div><dt>値段の設定</dt><dd>100〜400円（100円玉）。500円玉用の部品もあります（別売り）</dd></div>
+              <div><dt>移動</dt><dd>キャスター付き（ストッパーあり）。組み立ては不要です</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cost">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>3</b>始める費用</span>
+        <h2><span class="nb">最低いくらで</span><span class="nb">始められる？</span></h2>
+      </div>
+      <div class="equation">
+        <div class="eq-box"><span class="what">筐体 1ボックス（上下2台）</span><span class="price">65,000円</span></div>
+        <span class="op" aria-hidden="true">＋</span>
+        <div class="eq-box"><span class="what">最初の商品 2種類×1袋</span><span class="price range">約1.5万〜1.8万円</span></div>
+        <span class="op" aria-hidden="true">＝</span>
+        <div class="eq-box total"><span class="what">合計</span><span class="price">約8万円から</span></div>
+      </div>
+      <p class="note" style="margin-top: 14px">価格は税別です。商品は問屋の公開価格の例で、1袋は20〜40個入りです。送料は別途かかります。ガチャ商品のご購入で、ディスプレイのデザインなどのサポートは無料です。</p>
+    </div>
+  </section>
+
+  <section class="tint" id="sales">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>4</b>売上の目安</span>
+        <h2><span class="nb">売上はどれくらい？</span><span class="nb">多い場所・少ない場所</span></h2>
+        <p>売上は、置く場所の人通りにほぼ比例します。1ボックス（上下2台）の1か月の目安です。</p>
+      </div>
+      <div class="sales">
+        <div class="tbl">
+          <div class="scroll">
+            <table>
+              <thead><tr><th scope="col">置く場所</th><th scope="col">月の売上</th><th scope="col">月の手残り</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">駅構内・駅ビル</th><td data-label="月の売上">1.5万〜3万円</td><td class="keep" data-label="月の手残り">約3,000〜6,000円</td></tr>
+                <tr><th scope="row">大型商業施設</th><td data-label="月の売上">1.2万〜2.5万円</td><td class="keep" data-label="月の手残り">約2,400〜5,000円</td></tr>
+                <tr><th scope="row">道の駅</th><td data-label="月の売上">0.8万〜1.5万円</td><td class="keep" data-label="月の手残り">約1,600〜3,000円</td></tr>
+                <tr><th scope="row">ホテル・旅館</th><td data-label="月の売上">0.5万〜1.2万円</td><td class="keep" data-label="月の手残り">約1,000〜2,400円</td></tr>
+                <tr><th scope="row">飲食店・スーパー</th><td data-label="月の売上">0.5万〜1万円</td><td class="keep" data-label="月の手残り">約1,000〜2,000円</td></tr>
+                <tr><th scope="row">病院・クリニック</th><td data-label="月の売上">0.3万〜0.8万円</td><td class="keep" data-label="月の手残り">約600〜1,600円</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="traffic">
+          <div class="tcard hi"><span class="who">1日の人通り1,000人以上</span><span class="what">売上が安定しやすい</span></div>
+          <div class="tcard lo"><span class="who">1日の人通り500人未満</span><span class="what">月5,000円以下が目安</span></div>
+          <p class="note">人通りと売上の目安は、ガチャ設置事業者の株式会社SOARAの公表値です。</p>
+        </div>
+      </div>
+      <p class="formula">月の手残り ＝ 月の売上 × <b>約20%</b>（版権品の場合）</p>
+      <p class="hint">人通りの少ないお店では、売上よりも、話題づくりやお子さまの楽しみとして活かす方法もあります。オリジナル商品なら、1回あたりの手残りも増えます。</p>
+      <p class="note" style="margin-top: 12px">出典：株式会社SOARA「ガチャガチャ1台あたりの月間売上」（2026年4月16日、2段型1台の実績と立地別の目安）。手残りは、商品の仕入れを販売価格の75%、ロス3%として、税抜で計算しました。</p>
+    </div>
+  </section>
+
+  <section id="original">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>5</b>オリジナル商品</span>
+        <h2><span class="nb">オリジナル商品も</span><span class="nb">作れます</span></h2>
+        <p>お店だけ・地域だけのガチャで、ほかにない売場にできます。</p>
+      </div>
+      <div class="orig">
+        <div class="orig-points">
+          <p class="lead">小ロットから、大ロットまで</p>
+          <ul class="checks">
+            <li>100個から注文できる商品もあります（種類は限られます）。</li>
+            <li>2万個なら、1個150〜300円程度で作れます（中国の工場で製作）。</li>
+          </ul>
+          <p>仕入れ値が安い商品なら、1回あたりの手残りが増えます。400円で売る場合の例です。</p>
+          <div class="compare-pill">
+            <span class="ours">1個200円のオリジナル商品<br>1回の手残り <b>約153円</b></span>
+            <span>版権品（仕入れ75%）<br>1回の手残り <b>約80円</b></span>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure><img src="img/charm-800.jpg" width="800" height="533" loading="lazy" alt="ぷっくりした立体チャームの商品イメージ"><figcaption>ぷっくり立体チャーム</figcaption></figure>
+          <figure><img src="img/acrylic-800.jpg" width="800" height="533" loading="lazy" alt="透明なアクリルスタンドの商品イメージ"><figcaption>アクリルスタンド</figcaption></figure>
+          <figure><img src="img/animal-1024.jpg" width="1024" height="683" loading="lazy" alt="動物モチーフのキーホルダーとカプセルの商品イメージ"><figcaption>動物モチーフのキーホルダー</figcaption></figure>
+          <figure><img src="img/unboxing-1024.jpg" width="1024" height="683" loading="lazy" alt="カプセルを開けて中の商品を取り出すイメージ"><figcaption>開ける瞬間も楽しい</figcaption></figure>
+        </div>
+      </div>
+      <p class="note" style="margin-top: 10px">商品画像はGPT Image 2で作成した企画イメージで、実際の商品ではありません。</p>
+      <div class="cases">
+        <h3>ご当地ガチャの例</h3>
+        <ul>
+          <li>道の駅やまがた蔵王：ご当地ガチャのシリーズ累計販売数が21,000個を突破（2026年9月27日発表）。<a href="https://www.m-yzao.com/archives/7775" target="_blank" rel="noopener">お知らせ</a></li>
+          <li>道の駅「北オホーツクはまとんべつ」：浜頓別町特産品ガチャが今季分完売（2025年9月2日発表）。<a href="https://hokkaido-michinoeki.jp/michiekiinfo/hamatonbetsu/61322/" target="_blank" rel="noopener">お知らせ</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint" id="flow">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>6</b>始めるまでの流れ</span>
+        <h2><span class="nb">LINEで相談して、</span><span class="nb">すぐスタート</span></h2>
+      </div>
+      <ol class="flow">
+        <li><b>LINEで相談</b><span>置きたい場所の広さや業種をお知らせください。</span></li>
+        <li><b><span class="nb">場所と</span><span class="nb">人通りを確認</span></b><span>置き場所と、前を通る人の数を一緒に確かめます。</span></li>
+        <li><b><span class="nb">デザイン・</span><span class="nb">商品のご提案</span></b><span>台紙・POPと、お店に合う商品をご提案します。</span></li>
+        <li><b><span class="nb">設置して</span><span class="nb">スタート</span></b><span>筐体は置くだけ。組み立ては不要です。</span></li>
+        <li><b><span class="nb">補充・保守も</span><span class="nb">サポート</span></b><span>入れ替えや困ったときも、担当が対応します。</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">よくある質問</span>
+        <h2>よくある質問</h2>
+      </div>
+      <div class="faq">
+        <details><summary>どんなお店に向いていますか？</summary><p>雑貨店、カフェ、飲食店、美容室、クリニックの待合、道の駅、ホテルのロビーなど、空いている壁ぎわがあるお店・施設に置けます。人通りが多いほど売上は上がります。</p></details>
+        <details><summary>100円玉以外でも動きますか？</summary><p>100〜400円は100円玉で設定します。500円玉用の部品もあります（別売り）。</p></details>
+        <details><summary>置く商品は自分で選ぶのですか？</summary><p>担当が、お店の客層に合う商品を選んでご提案します。オリジナル商品の制作もご相談いただけます。</p></details>
+        <details><summary>サポートにお金はかかりますか？</summary><p>ガチャ商品をご購入いただくと、ディスプレイのデザイン、商品の選定、導入、アフターのサポートは無料です。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap">
+      <div class="cta-face"><img src="img/line-icon.png" width="480" height="480" alt="LINEサポート担当のアイコン"></div>
+      <div class="cta-copy">
+        <p class="bubble">まずはLINEで、お気軽にどうぞ！</p>
+        <h2><span class="g">LINE</span>で相談して、<span class="nb">すぐスタート</span></h2>
+        <p>置きたい場所の広さや業種を、LINEでお知らせください。担当がご提案します。</p>
+        <a class="btn btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで友だち追加して相談する</a>
+      </div>
+      <div class="qr"><img src="img/line-qr.png" width="465" height="465" alt="LINEで友だち追加するためのQRコード"><span>LINEで友だち追加</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h3>ご注意</h3>
+      <ul>
+        <li>売上・手残りは目安で、保証するものではありません。</li>
+        <li>価格は税別です。送料は別途かかります。</li>
+        <li>掲載画像はGPT Image 2で作成したイメージです。</li>
+        <li>「ガシャポン」は株式会社バンダイの登録商標です。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>出典</h3>
+      <ul>
+        <li>日本カプセルトイ協会 <a href="https://www.japan-cta.org/wp/wp-content/uploads/2026/02/JACTA20260219.pdf" target="_blank" rel="noopener">市場動向調査（2026年2月19日）</a></li>
+        <li>株式会社ハピネット <a href="https://prtimes.jp/main/html/rd/p/000002073.000031422.html" target="_blank" rel="noopener">カプセルトイ調査（2025年3月12日）</a></li>
+        <li>株式会社SOARA <a href="https://soara-mu.jp/blog/gacha-crane-average-revenue" target="_blank" rel="noopener">1台あたりの月間売上（2026年4月16日）</a></li>
+        <li>あミューズ（カプセルトイ卸） <a href="https://www.a-muzu.com/category/CAPSULE_TOY_003_3/" target="_blank" rel="noopener">卸価格（2026年10月1日閲覧）</a></li>
+      </ul>
+    </div>
+    <div class="brandline">
+      <span>運営：<a href="https://bantex.jp/" target="_blank" rel="noopener">BANTEX</a></span>
+      <span>ガチャのご相談：<a href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener">LINE</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="line-bar"><a class="btn btn-line" href="https://lin.ee/6LG4sNV" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>LINEで相談する</a></div>
+</body>
+</html>
